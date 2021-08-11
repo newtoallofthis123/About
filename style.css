@@ -67,3 +67,24 @@ body {
     margin-right: 300px;
     font-family: 'Original Surfer';
 }
+
+.form {
+    text-align: center;
+}
+
+.input {
+    display: inline;
+    all: unset;
+    font-family: JetBrains Mono, Cascadia Code, monospace, arial, Lucida console;
+    font-size: 24px;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 24px;
+}
+
+::placeholder {
+color: #2F2F2F;
+opacity: 0.7; 
+}
+
