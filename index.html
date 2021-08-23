@@ -1,209 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel = "icon" href = "https://github.com/newtoallofthis123/Assets/raw/main/Image/noobscience.png"
-            type = "image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title>NoobScience</title>
-  </head>
-  <body>
-    <div class="container-fluid" style="background-color: rgb(114, 117, 100, 0.514); border-radius: 20px;">
-      <nav class="navbar navbar-expand-lg navbar-collapse navbar-light bg-grey" style="font-size: 24px;">
-        <a href="https://github.com/newtoallofthis123/Assets/raw/main/Image/noobscience.png"><img src="https://github.com/newtoallofthis123/Assets/raw/main/Image/noobscience.png" width="40" height="40" class="img-fuild" ></a>
-        <a class="navbar-brand" href="https://newtoallofthis123.github.io/About" target="_blank" style="font-size: 38px;">NoobScience</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="https://newtoallofthis123.github.io/About">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="docs/projects.html" target="_blank">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://newtoallofthis123.github.io/NSBlog" target="_blank">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="docs/about.html" target="_blank">About</a>
-            </li>
-            <li>
-              <a class="nav-link" href="docs/interests.html" target="_blank">Interests</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mailto: noobscience123@gmail.com" target="_blank">Contact</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Hello I am NoobScience, I am current learning tech. I love Open source and this is my website to talk about myself and to show you some of my projects. Hope you enjoy it and like some of the stuff I Developed. NoobScience.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoobScience - ⚡</title>
+</head>
+<nav>
+  <img src="docs/assets/Images/icons/icon.ico" alt="NoobNote icon" style="position: relative; top: 5px; left: 15px;">
+  <li class="nav_item"><a href="" class="nav_title">NoobScience</a></li>
+  <div class="nav">
+    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+    <li class="nav_item"><a href="#projects" class="nav_link">Projects</a></li>
+    <li class="nav_item"><a href="#blog" class="nav_link">Blog</a></li>
+    <li class="nav_item"><a href="#interests" class="nav_link" id="modal_btn">New!</a></li>
+    <li class="nav_item"><a href="docs/hello.py" class="nav_link">|</a></li>
+    <li class="nav_item"><a href="https://github.com/newtoallofthis123" class="nav_link">Github</a></li>
+    <li class="nav_item"><a href="mailto:noobscience123@gmail.com" class="nav_link">Contact</a></li>
+  </div>
+</nav>
+<body>
+  <div style="background-image: linear-gradient(to right, rgb(180, 240, 41), rgb(80, 218, 236));">
+    <h1 class="middle_attraction" id="animation"></h1>
+    <div style="text-align: center; margin-top: 20px; padding-bottom: 20px;">
+        <div class="img_slide_show" style="background-color: rgba(46, 44, 44, 0.527); padding: 40px; padding-bottom: 12px;">
+            <div class="display_none fade"><a href="https://newtoallofthis123.github.io/NoobNote" target="_blank"><img src="docs/assets/Images/NoobNote.gif" style="width:100%" id="img"></a><p class="img_text">NoobNote A Simple Notepad</p></div>
+            <div class="display_none fade"><a href="https://newtoallofthis123.github.io/leaf" target="_blank"><img src="docs/assets/Images/leaf.gif" style="width:100%" id="img"></a><p class="img_text">Leaf A Simple Qr Code Generator and Manager</p></div>
+            <div class="display_none fade"><a href="https://newtoallofthis123.github.io/topy" target="_blank"><img src="docs/assets/Images/topy.gif" style="width:100%" id="img"></a><p class="img_text">Topy A ToDo Manager</p></div>
+            <div class="display_none fade"><a href="https://newtoallofthis123.github.io/unleaky" target="_blank"><img src="docs/assets/Images/unleaky.gif" style="width:100%" id="img"></a><p class="img_text">Unleaky A CLI Password Manager</p></div>
         </div>
-      </nav>
-      <h2 style="color:black; font-family: Cascadia Code; font-size: 24px; text-align: right;" >- I Love Tech!</h2>
-      <hr class="my-2">
-      <h2 style="color:black; font-family: Cascadia Code; font-size: 24px; text-align: center;">New!</h2>
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <p style="font-size: 24px; text-align: center; font-family: JetBrains Mono, Cascadia Code, monospace, arial, Lucida console;">Noogle search is a self hosted Fork of <a href="https://github.com/benbusby/whoogle-search" style="color: #4D4F43;" target="_blank">Whoogle Search</a>. Try it!</p>
-          <form id="search" role="search" class="form">
-            <input type="search" id="search_query" name="q"
-             placeholder="Search Noogle..."
-             aria-label="Search through Noogle, a alternative to google" class="input">
-          </form>
-      </div>
-      <div class="jumbotron" style="background-color: rgb(114, 117, 100, 0.514); border-radius: 20px;">
-        <h1 class="display-3">About Me</h1>
-        <p class="lead">I started coding for fun and also to understand how a few of my favourite software was built. I fell in love with the simpilicty and feature richness of python. I also know a little web develoment. I write small projects which are mostly privacy friendly alternatives to some software. </p>
-        <hr class="my-2">
-        <p>All of my projects are open source and hosted on github.</p>
-        <p class="lead">
-          <div style="text-align: center;">
-            <a class="btn btn-primary btn-lg" href="https://github.com/newtoallofthis123" role="button">Github</a>
-            <a class="btn btn-primary btn-lg" href="https://www.youtube.com/channel/UCbYWy7rhUhToM3tbw-Z3SnQ" role="button">Youtube</a>
-          </div>
-        </p>
-      </div>
-      <h2 class="text-center" style="font-size: 44px;"><b>Recent Projects</b></h2>
-      <div class="jumbotron jumbotron-fluid" style="background-color: rgb(114, 117, 100, 0.514); border-radius: 20px;">
-        <div class="container">
-          <h1 class="display-3">NoobNote</h1>
-          <p class="lead">NoobNote is a simple light weight alternative to notepad. No telementry and private.</p>
-          <div style="text-align: center;">
-            <a href="https://github.com/newtoallofthis123/Assets/raw/main/Image/NoobNote.png" target="_blank"><img src="https://github.com/newtoallofthis123/Assets/raw/main/Image/NoobNote.png" alt="NoobNote" width=80% heigth=80% class="img-responsive"></a>
-          </div>
-        </div>
-        <hr class="my-2">
-        <div style="text-align: center;">
-          <a class="btn btn-primary btn-lg" href="https://newtoallofthis123.github.io/NoobNote" role="button" target="_blank">Website</a>
-          <a class="btn btn-primary btn-lg" href="https://github.com/newtoallofthis123/NoobNote" role="button" target="_blank">Github</a>
-        </div>
-        <hr class="my-2">
-      </div>
-      <div class="jumbotron jumbotron-fluid" style="background-color: rgb(114, 117, 100, 0.514); border-radius: 20px;">
-        <div class="container">
-          <h1 class="display-3">Leaf</h1>
-          <p class="lead">Leaf is a simple Qr-Code Generator written in python. It is simple and efficient</p>
-          <div style="text-align: center;">
-            <a href="https://github.com/newtoallofthis123/Assets/raw/main/Image/leaf1.png" target="_blank"><img src="https://github.com/newtoallofthis123/Assets/raw/main/Image/leaf1.png" alt="Leaf" width="300" height="380"></a>
-          </div>
-        </div>
-        <hr class="my-2">
-        <div style="text-align: center;">
-          <a class="btn btn-primary btn-lg" href="https://newtoallofthis123.github.io/leaf" target="_blank" role="button" >Website</a>
-          <a class="btn btn-primary btn-lg" href="https://github.com/newtoallofthis123/leaf" role="button" target="_blank">Github</a>
-        </div>
-        <hr class="my-2">
-        </div>
-            <div class="jumbotron jumbotron-fluid" style="background-color: rgb(114, 117, 100, 0.514); border-radius: 20px;">
-          <div class="container">
-            <h1 class="display-3">Unleaky</h1>
-            <p class="lead">Unleaky is a simple cli password manager and this was my first attempt to use sqlite3 in python. The passwords are not encrypted, not recommended for actual use. Use it just for fun</p>
-            <div style="text-align: center;">
-              <a href="https://github.com/newtoallofthis123/Assets/raw/main/Image/lock.png" target="_blank"><img src="https://github.com/newtoallofthis123/Assets/raw/main/Image/lock.png" alt="NoobNote" width=200 heigth=280></a>
-            </div>
-          </div>
-          <hr class="my-2">
-          <div style="text-align: center;">
-            <a class="btn btn-primary btn-lg" href="https://newtoallofthis123.github.io/unleaky" role="button" target="_blank">Website</a>
-            <a class="btn btn-primary btn-lg" href="https://github.com/newtoallofthis123/unleaky" role="button" target="_blank">Code on Github</a>
-          </div>
-          <div style="text-align: center;">
-            <a href="/docs/projects.html" style="text-align: center;color: #000;font-size: 18px;">See more</a>
-          </div>
-          <hr class="my-2">
-        </div>
-      <h2 class="text-center" style="font-size: 44px;"><b>Recent Blog Posts</b></h2>
-      <div class="jumbotron jumbotron-fluid" style="background-color: rgb(114, 117, 100, 0.514); border-radius: 20px;">
-        <div class="container">
-          <h1 class="display-3">Duckit!</h1>
-          <p class="lead">DuckDuckGo is a one of the best alternatives to google. Read the blog post to learn more about it.</p>
-          <div style="text-align: center;">
-            <a href="https://github.com/newtoallofthis123/Assets/raw/main/Image/ddg.png" target="_blank"><img src="https://github.com/newtoallofthis123/Assets/raw/main/Image/ddg.png" alt="DuckDuckGo" width=200 heigth=280></a>
-          </div>
-        </div>
-        <hr class="my-2">
-        <div style="text-align: center;">
-          <a class="btn btn-primary btn-lg" href="https://newtoallofthis123.github.io/NSBlog/docs/duckit.html" target="_blank" role="button" >Read on NSBlog</a>
-          <a class="btn btn-primary btn-lg" href="https://newtoallofthis123.github.io/NSBlog/docs/pdf_files/duckit.pdf" role="button" target="_blank">Download PDF</a>
-        </div>
-        <hr class="my-2">
-      </div>
-      <div class="jumbotron jumbotron-fluid" style="background-color: rgb(114, 117, 100, 0.514); border-radius: 20px;">
-        <div class="container">
-          <h1 class="display-3">Best Firefox 91 Features</h1>
-          <p class="lead">Firefox 91 is awesome. Read the blog post to know my opinion about it.</p>
-          <div style="text-align: center;">
-            <a href="https://github.com/newtoallofthis123/Assets/raw/main/Image/firefox.png" target="_blank"><img src="https://github.com/newtoallofthis123/Assets/raw/main/Image/firefox.png" alt="NoobNote" width=200 heigth=280></a>
-          </div>
-        </div>
-        <hr class="my-2">
-        <div style="text-align: center;">
-          <a class="btn btn-primary btn-lg" href="https://newtoallofthis123.github.io/NSBlog/docs/firefox_features.html" target="_blank" role="button" >Read on NSBlog</a>
-          <a class="btn btn-primary btn-lg" href="https://newtoallofthis123.github.io/NSBlog/docs/pdf_files/firefox91_features.pdf" role="button" target="_blank">Download PDF</a>
-        </div>
-        <hr class="my-2">
-      </div>
-      <div class="jumbotron jumbotron-fluid" style="background-color: rgb(114, 117, 100, 0.514); border-radius: 20px;">
-        <div class="container">
-          <h1 class="display-3">Libreoffice</h1>
-          <p class="lead">Is Libreoffice really better than Microsoft Office? This is discussed in depth in this blog article</p>
-          <div style="text-align: center;">
-            <a href="https://github.com/newtoallofthis123/Assets/raw/main/Image/libreoffice.png" target="_blank"><img src="https://github.com/newtoallofthis123/Assets/raw/main/Image/libreoffice.png" alt="NoobNote" width=200 heigth=280></a>
-          </div>
-        </div>
-        <hr class="my-2">
-        <div style="text-align: center;">
-          <a class="btn btn-primary btn-lg" href="https://newtoallofthis123.github.io/leaf" target="_blank" role="button" >Read on NSBlog</a>
-          <a class="btn btn-primary btn-lg" href="https://github.com/newtoallofthis123/leaf" role="button" target="_blank">Download PDF</a>
-        </div>
-        <div style="text-align: center;">
-          <a href="/docs/about.html" style="text-align: center;color: #000;font-size: 18px;">See more</a>
-        </div>
-        <hr class="my-2">
-        <div style="text-align: center; color: #89E22B; font-family: Cascadia Code; ;">
-          <a href="docs/about.html" style="color: #89E22B;" target="_blank">About</a>
-          <a href="docs/projects.html" style="color: #89E22B;" target="_blank">Projects</a>
-          <a href="https://newtoallofthis123.github.io/NSBlog" style="color: #89E22B;" target="_blank">Blog</a>
-          <a href="docs/interests.html" style="color: #89E22B;" target="_blank">Interests</a>
-          <a href="mailto: noobscience123@gmail.com" style="color: #89E22B;" target="_blank">Contact</a>
-        </div>
+    </div>
+  </div>
+  <div id="about" style="background-color: #232626;">
+    <h1 class="title_2" style="color: #d9dfdf; text-decoration: underline; text-decoration-thickness: 4px; padding-top: 12px;">About Me</h1>
+    <p class="content_white" style="margin-left: 30px; margin-right: 30px; padding-bottom: 12px;">Hello I am NoobScience. I love working with python and I am currently learning a little web development, hence the website. I love making small projects and I am a huge believer in the <a href="https://en.wikipedia.org/wiki/Open_source" class="link_white">open source</a> mission and all of my projects are open source and hosted on github, including the site itself. I am huge fan of customization and tkintering. I like reading mystery novels and I am a huge fan of <a href="https://www.minetest.net/" class="link_white">Minetest</a>. I like testing out new software and I am a huge firefox fan. Most of my projects using python and a few of them are with html and css and javascript. I am a huge believer of tech privacy and security. I sometimes write small blog articles that I post on my <a href="https://newtoallfothis123.github.io/NSBlog" class="link_white">Blog</a>. I try to contribute to small open source projects and I am usually active on github. I would love to collaborate in python. One of my most recent and proper projects is <a href="https://newtoallofthis123.github.io/NoobNote" class="link_white">NoobNote</a> which is an alternative to Notepad. It aims to add new features to Notepad while at the same time maintaining the Notepad Nostalgia. For more of my projects, do visit my <a href="https://github.com/newtoallofthis123" class="link_white">github</a> page.</p>
+    <div class="div_features" style="padding-bottom: 12px;">
+      <div style="text-align: center;" class="div_left"><a href="https://giphy.com/gifs/Friends-friends-tv-episode-219-Vbtc9VG51NtzT1Qnv1" class="link_white" target="_blank"><img src="docs/assets/Images/joey_hi.gif" alt=""></a></div>
+      <div class="div_right">
+        <p class="content_white" style="margin-right: 30px;">Most of my projects are registered under the <a href="https://newtoallofthis123.github.io/license" class="link_white">MIT License</a>, hence you are free to use them as you like and use them in whatever you like, though I am not responsible. It would also be very kind of you to attribute my name if you do so. I also have a <a href="https://www.youtube.com/channel/UCbYWy7rhUhToM3tbw-Z3SnQ" class="link_white">youtube</a> channel where I ocassionaly post videos. I like to watch movie and novel reviews on youtube and I am facinated by the world of tech. If you are of similar interests and want to get in touch, you can reach me on my <a href="mailto:noobscience123@gmail.com" class="link_white">email</a>, hope you get in touch</p>
+        <h1 class="sub_heading_white">⚡ NoobScience</h1>
+        <ul>
+          <li class="content_white">Github: <a href="https://github.com/newtoallfothis123" class="link_white">@newtoallofthis123</a></li>
+          <li class="content_white">YouTube: <a href="https://www.youtube.com/channel/UCbYWy7rhUhToM3tbw-Z3SnQ" class="link_white">@noobscience</a></li>
+          <li class="content_white">Primary Language: <a href="https://www.python.org/" class="link_white">Python</a></li>
+          <li class="content_white">License: <a href="https://newtoallfothis123.github.io/license" class="link_white">MIT License</a></li>
+          <li class="content_white">Contact: <a href="mailto:noobscience123@gmail.com" class="link_white">Gmail</a></li>
+        </ul>
       </div>
     </div>
-    <script type="text/javascript" src="brain.js"></script>
-  </body>
-  <footer>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light bg-grey" style="font-size: 24px;">
-        <a class="navbar-brand" href="docs/about.html" target="_blank" style="font-size: 24px;">&copy NoobScience 2021</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 16px;">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="docs/projects.html" target="_blank">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://newtoallofthis123.github.io/NSBlog" target="_blank">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="docs/about.html" target="_blank">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/newtoallofthis123" target="_blank">Github</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://www.youtube.com/channel/UCbYWy7rhUhToM3tbw-Z3SnQ" target="_blank">Youtube</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="mailto: noobscience123@gmail.com" target="_blank">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  </div>
+  <div style="background-color: rgb(212, 202, 202);" id="projects">
+    <h1 class="title_2" style="text-decoration: underline; text-decoration-thickness: 4px;">Some of My Projects</h1>
+    <div class="div_features">
+      <div class="div_left">
+        <h1 class="sub_heading">NoobNote</h1>
+        <div style="text-align: center;"><img src="docs/assets/Images/icons/NoobNote.png" alt=""></div>
+        <p class="content">NoobNote is a simple Notepad written in python. <br> It aims to add new features to Notepad while maintianing the Notepad nostalgia. <br> NoobNote is registered under the <a href="https://newtoallofthis123.github.io/license" class="link">MIT License</a>. NoobNote is simple and beginner friendly. <br>Hope you like it. You can see it <a href="https://newtoallofthis123.github.io/NoobNote" class="link">here</a>.</p>
+      </div>
+      <div class="div_right">
+        <div class="code_div" style="margin-top: 80px;"><p class="code">pip install NoobNote</p></div>
+        <button class="btn" style="margin-top: 0px;"><a href="https://newtoallofthis123.github.io/NoobNote" class="btn_link">Website</a></button>
+        <button class="btn" style="margin-top: 0px;"><a href="https://github.com/newtoallofthis123/NoobNote" class="btn_link">Source</a></button>
+      </div>
     </div>
-  </footer>
+    <hr style="margin-top: 12px; color: rgb(44, 42, 42);">
+    <div class="div_features">
+      <div class="div_left">
+        <h1 class="sub_heading">ToPy</h1>
+        <div style="text-align: center;"><img src="docs/assets/Images/icons/topy.png" alt=""></div>
+        <p class="content">ToPy is a CLI ToDo manager.<br> It is very easy and simple to use. ToPy uses sqlite3 to store all your ToDo's.<br> ToPy is registered under the <a href="https://newtoallofthis123.github.io/license" class="link">MIT License</a>. You can add Topy to your path and easily use it.<br> If you are an avid user of the terminal interface, you will like ToPy.</p>
+      </div>
+      <div class="div_right">
+        <button class="btn"><a href="https://newtoallofthis123.github.io/topy" class="btn_link">Website</a></button>
+        <button class="btn"><a href="https://github.com/newtoallofthis123/topy" class="btn_link">Source</a></button>
+      </div>
+    </div>
+    <hr style="margin-top: 12px; color: rgb(44, 42, 42);">
+    <div class="div_features">
+      <div class="div_left">
+        <h1 class="sub_heading">Unleaky</h1>
+        <div style="text-align: center;"><img src="docs/assets/Images/icons/unleaky.png" alt=""></div>
+        <p class="content">Unleaky is a CLI Password manager.<br> Unleaky uses sqlite3 to store all your Passowrds, hence it is not recommended for a few.<br> ToPy is registered under the <a href="https://newtoallofthis123.github.io/license" class="link">MIT License</a>.  <br> Unleaky comes with a deflaut master passowrd that can be changed. More info on the website.<br> Unleaky also comes with a master password that you can change. <br> Unleaky is my attempt to use and learn sqlite3 databases.</p>
+      </div>
+      <div class="div_right">
+        <button class="btn"><a href="https://newtoallofthis123.github.io/unleaky" class="btn_link">Website</a></button>
+        <button class="btn"><a href="https://github.com/newtoallofthis123/unleaky" class="btn_link">Source</a></button>
+      </div>
+    </div>
+    <hr style="margin-top: 12px; color: rgb(44, 42, 42);">
+    <div class="div_features">
+      <div class="div_left">
+        <h1 class="sub_heading">leaf Qr</h1>
+        <div style="text-align: center;"><img src="docs/assets/Images/icons/leaf.png" alt=""></div>
+        <p class="content">Leaf is a simple QrCode Generator and Manager<br> Leaf uses PyPng and PyQr to generate and manage your QrCodes with a tkinter window. <br> Leaf is registered under the <a href="https://newtoallofthis123.github.io/license" class="link">MIT License</a>. <br> Leaf also can be conventienly launched from the terminal if installed with <a href="https://pypi.org/project/leafQR/" class="link">pip</a><br> If you are interested in this beginner friendly project, defiently give it a try.</p>
+      </div>
+      <div class="div_right">
+        <div class="code_div" style="margin-top: 80px;"><p class="code">pip install leafQR</p></div>
+        <button class="btn" style="margin-top: 0px;"><a href="https://newtoallofthis123.github.io/leaf" class="btn_link">Website</a></button>
+        <button class="btn" style="margin-top: 0px;"><a href="https://github.com/newtoallofthis123/leaf" class="btn_link">Source</a></button>
+      </div>
+    </div>
+    <hr style="margin-top: 12px; color: rgb(44, 42, 42);">
+    <div>
+      <h1 class="sub_heading" style="text-align: center; font-size: 20px;">Some of my other projects include <a href="https://newtoallofthis123.github.io/ranpack" class="link">RanPack</a>, <a href="https://newtoallofthis123.github.io/NS-Texture" class="link">NS-Texture</a> </h1>
+      <hr style="margin-top: 12px; color: rgb(44, 42, 42);">
+    </div>
+  </div>
+  <div style="background-color: rgb(27, 29, 29); padding-bottom: 30px;" id="blog">
+    <h1 class="title_2" style="text-decoration: underline; text-decoration-thickness: 4px; color: rgb(230, 233, 235); margin-bottom: 20px; padding-top: 20px;">Some of My Blog Posts</h1>
+    <h1 class="sub_heading_white" style="margin-top: 20px;">Just Duck it!</h1>
+    <div class="div_features">
+      <div class="div_left"><img src="docs/assets/Images/ddg.png" alt="" style="margin-top: 12px;"></div>
+      <div class="div_right"><p class="content_white">DuckDuckGo is a one of the best alternatives to google. Read the blog post to learn more about it Have a question? Just google it! This has a become a common term. Don't get me wrong, I love google results but I don't like the google as a company. Just a simple search tells you all about google's advents to collect your data and use it as they like. DuckDuckGo has over the years, become a easy and simple alternative to Google. Read this small article to learn more about it and why to start "Ducking it" rather than "Googling it". <div><button class="btn_inline"><a href="https://newtoallofthis123.github.io/NSBlog/docs/duckit.html" class="btn_link">Read on NSBlog</a></button><button class="btn_inline" style="margin-left: 12px;"><a href="https://newtoallofthis123.github.io/NSBlog/docs/pdf_files/duckit.pdf" class="btn_link">Download Pdf</a></button></div></p></div>
+    </div>
+    <h1 class="sub_heading_white">Firefox 91 Features</h1>
+    <div class="div_features">
+      <div class="div_left"><img src="docs/assets/Images/firefox.png" alt="" style="margin-top: 12px;"></div>
+      <div class="div_right"><p class="content_white">Firefox is in my opinion is one of the best browsers out there. I know firefox has it's problems, but it is the best alternative to chromium, no scratch that, it is the ONLY usable alternative to chromium. Mozilla has also come under heat for being sponsored by google but I trust a open source browser which is customizable and is only sponsored by google than a browser which is literally maintained by google. Mozilla released Firefox 91 this month and this is a fan boy's opinion about it. Hope I convince you to try the new <a href="" class="link_white">Firefox</a>.<div><button class="btn_inline"><a href="https://newtoallofthis123.github.io/NSBlog/docs/firefox_features.html" class="btn_link">Read on NSBlog</a></button><button class="btn_inline" style="margin-left: 12px;"><a href="https://newtoallofthis123.github.io/NSBlog/docs/pdf_files/firefox91_features.pdf" class="btn_link">Download Pdf</a></button></div></p></div>
+    </div>
+    <h1 class="sub_heading_white" style="margin-top: 20px;">Libre Office, Quiet Literally</h1>
+    <div class="div_features">
+      <div class="div_left"><img src="docs/assets/Images/libreoffice.png" alt="" style="margin-top: 12px;"></div>
+      <div class="div_right"><p class="content_white">Microsoft Office has over the years, become bulky and more and more on the closed sourced side. Moreover there no document manipulation tools for linux based operating systems. LibreOffice aims to change that. Libreoffice is a completely free and open source document manipulation tool which is maintain and run by the Document Foundation. It is simple, efficient and awesome. LibreOffice comes with an alternative to Word, Excel, PowerPoint, Acess and Abode Acrobat. It is a must have piece of software for everyone.<div><button class="btn_inline"><a href="" class="btn_link">Read on NSBlog</a></button><button class="btn_inline" style="margin-left: 12px;"><a href="" class="btn_link">Download Pdf</a></button></div></p></div>
+    </div>
+  </div>
+  <div style="background-color: rgb(58, 57, 57); padding-top: 20px;">
+    <div style="text-align: center; border-style: solid; border-color: rgb(202, 201, 200); margin-left: 25%; margin-right: 25%; background-color: rgba(218, 206, 206, 0.308); margin-top: 12px; padding-bottom: 30px;">
+      <h1 class="content_white" style="text-align: center; font-size: 36px; padding-bottom: 20px;">Prehaps Some <a href="https://www.youtube.com/watch?v=bzehQ60b3XI" class="link_white" style="font-size: 32px;" target="_blank">Music</a>?</h1>
+      <audio autoplay controls style="width: 360px;">
+          <source src="docs/assets/audio/Close-IZECOLD-Molly_Ann(Brooks Remix).ogg" type="audio/ogg">
+          <source src="docs/assets/audio/Close-IZECOLD-Molly_Ann(Brooks Remix).mp3" type="audio/mpeg">
+        Your browser does not support the video tag.
+      </audio>
+    </div>
+    <hr style="color: rgb(212, 210, 208); margin-top: 30px;">
+    <h1 class="sub_heading_white">PS: I can't believe I completed this site. Hope you like it</h1>
+    <div style="text-align: center;"><a href="https://giphy.com/gifs/Friends-season-1-episode-15-friends-tv-f6Jv92MQREQ3yvo4bm" class="link_white" target="_blank"><img src="docs/assets/Images/chandler_whoa.gif" alt=""></a></div>
+  </div>
+  <div class="modal_popup" id="interests">
+    <div class="content_modal">
+      <h1 class="sub_heading">New!</h1>
+      <p class="content">Noogle Search, a self hosted version of <a href="" class="link">Whoogle Search</a>.</p>
+      <form id="search" role="search" class="form">
+        <input type="search" id="search_query" name="q"
+         placeholder="Search Noogle..."
+         aria-label="Search through Noogle, a alternative to google" class="input">
+      </form>
+      <span class="close_modal"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></span>
+    </div>
+  </div>
+  <script src="brain.js"></script>
+</body>
+<footer>
+  <ul>
+      <li class="nav_item"><a href="https://newtoallofthis123.github.io/About" class="nav_link" target="_blank" style="font-size: 24px;">©NoobScience</a></li>
+      <div class="nav" style="padding-left: 50%;">
+          <li class="nav_item"><a href="https://github.com/newtoallofthis123" class="nav_link">Github</a></li>
+          <li class="nav_item"><a href="https://newtoallofthis123.github.io/NSBlog" class="nav_link">Blog</a></li>
+          <li class="nav_item"><a href="https://github.com/newtoallofthis123?tab=repositories" class="nav_link">Projects</a></li>
+          <li class="nav_item"><a href="https://www.youtube.com/channel/UCbYWy7rhUhToM3tbw-Z3SnQ" class="nav_link">Youtube</a></li>
+          <li class="nav_item"><a href="mailto:noobscience123@gmail.com" class="nav_link">Contact</a></li>
+      </div>
+  </ul>
+</footer>
 </html>
