@@ -48,13 +48,13 @@ window.onclick = function(event){
 search_form = document.getElementById('search');
 search_query = document.getElementById('search_query');
 
-const NOOGLE = "https://noogle-search.herokuapp.com/search?q=";
+const YTPS = "https://ytps-live.herokuapp.com/search/q=";
 
-function search_noogle(event) {
+function search_ytps(event) {
   event.preventDefault();
-  const url_to_open = NOOGLE + search_query.value;
+  const url_to_open = YTPS + search_query.value;
   const window_with_search = window.open(url_to_open, '_blank');
   window_with_search.focus();
 }
 
-search_form.addEventListener('submit', search_noogle);
+search_form.addEventListener('submit', search_ytps);
