@@ -1,7 +1,6 @@
 // Courtesy https://codepen.io/gorvgoyl/pen/vRPpGO
 
 function TxtType(el, toRotate, period) {
-    debugger;
     var obj={};
         obj.toRotate = toRotate;
         obj.el = el;
@@ -14,7 +13,6 @@ function TxtType(el, toRotate, period) {
     };
 
 function tick(obj){
-    debugger;
     var i = obj.loopNum % obj.toRotate.length;
         var fullTxt = obj.toRotate[i];
 
