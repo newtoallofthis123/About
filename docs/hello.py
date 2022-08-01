@@ -1,8 +1,0 @@
-print("Hi")
-print("I am NoobScience")
-x = str(input("Can you introduce yourself?: "))
-print(f'Hello {x}, Thanks for using this script. This is just a fun easter egg I hid in my website. Hope you had a laugh.')
-print("Thanks for having a look around.")
-print("> NoobScience")
-x = str(input("Press any key to exit :)"))
-exit()

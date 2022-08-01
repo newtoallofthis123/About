@@ -1,39 +1,9 @@
-/* From cssbuttons.io by @nikk7007 */
-#contact_button {
-    padding: 0.8em 1.8em;
-    border: 2px solid #17C3B2;
-    position: relative;
-    overflow: hidden;
-    background-color: transparent;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 16px;
-    transition: .3s;
-    z-index: 1;
-    font-family: inherit;
-    color: #17C3B2;
+.social_link{
+    text-decoration: none;
+    color: rgb(235, 226, 226);
 }
-
-#contact_button::before {
-    content: '';
-    width: 0;
-    height: 300%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-    background: #17C3B2;
-    transition: .5s ease;
-    display: block;
-    z-index: -1;
-}
-
-#contact_button:hover::before {
-    width: 105%;
-}
-
-#contact_button:hover {
-    color: #111;
+.social_link:hover{
+    color: rgb(235, 226, 226);
 }
 
 /* From cssbuttons.io by @adamgiebl */
@@ -147,6 +117,60 @@
 
 /* For Email */
 .social_btn_email {
+    background: #05dae9;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #05dae9;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+}
+
+.social_btn_email .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #05dae9;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.social_btn_email:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.social_btn_email .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #05dae9;
+}
+
+.social_btn_email:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.social_btn_email:active .icon {
+    transform: scale(0.95);
+}
+
+/* For Email */
+.social_btn_twitter {
     background: #203cdb;
     color: white;
     font-family: inherit;
@@ -166,7 +190,7 @@
     padding-right: 3.3em;
 }
 
-.social_btn_email .icon {
+.social_btn_twitter .icon {
     background: white;
     margin-left: 1em;
     position: absolute;
@@ -181,21 +205,21 @@
     transition: all 0.3s;
 }
 
-.social_btn_email:hover .icon {
+.social_btn_twitter:hover .icon {
     width: calc(100% - 0.6em);
 }
 
-.social_btn_email .icon svg {
+.social_btn_twitter .icon svg {
     width: 1.1em;
     transition: transform 0.3s;
     color: #213edf;
 }
 
-.social_btn_email:hover .icon svg {
+.social_btn_twitter:hover .icon svg {
     transform: translateX(0.1em);
 }
 
-.social_btn_email:active .icon {
+.social_btn_twitter:active .icon {
     transform: scale(0.95);
 }
 
