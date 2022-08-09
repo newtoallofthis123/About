@@ -34,28 +34,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="assets/icons/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="ui_styles.css">
+    <link rel="stylesheet" id="theme" href="styles.css">
+    <link rel="stylesheet" id="ui_theme" href="ui_styles.css">
     <link rel="stylesheet" href="buttons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400&family=JetBrains+Mono&family=Josefin+Sans:wght@100;400&family=Oxygen+Mono&family=Poppins:wght@100;400&family=Roboto:wght@100;400&family=Square+Peg&display=swap" rel="stylesheet">
     <title>NoobScience | Student and Open Source Enthuasist</title>
 </head>
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212121;">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <!-- <a class="navbar-brand nav_title" href="/">NOOBSCIENCE</a> -->
-        <button data-text="Awesome" class="title_btn navbar-brand">
-            <span class="actual-text">&nbsp;NOOBSCIENCE&nbsp;</span>
-            <span class="hover-text" aria-hidden="true">&nbsp;NOOBSCIENCE&nbsp;</span>
-        </button>
+        <a href="/">
+            <button data-text="Awesome" class="title_btn navbar-brand">
+                <span class="actual-text">&nbsp;NOOBSCIENCE&nbsp;</span>
+                <span class="hover-text" aria-hidden="true">&nbsp;NOOBSCIENCE&nbsp;</span>
+            </button>
+        </a>
         <div class="d-flex">
-            <div style="align-items: center;"><a href="https://github.com/newtoallofthis123/" class="lead text" style="text-decoration: none; color: rgb(248, 245, 245);"><img src="https://github.com/newtoallofthis123/Assets/raw/main/Image/noobscience.png" alt="noobscience avatar" width="44" height="44" style="border-radius: 50%;"><img src="assets/logo-github.svg" alt=""></a></div>
+            <button style="align-items: center;" id="theme_toggle">☀ / 🌑</button>
+        </div>
+        <div class="d-flex">
+            <div style="align-items: center;"><a href="https://github.com/newtoallofthis123/" class="lead text" style="text-decoration: none; color: rgb(248, 245, 245);"><img src="https://github.com/newtoallofthis123/Assets/raw/main/Image/noobscience.png" alt="noobscience avatar" width="44" height="44" style="border-radius: 50%;"><img src="assets/logo-github.svg" id="github" alt="github"></a></div>
         </div>
     </div>
 </nav>
-<body style="background-color: #212121;">
-    <hr class="my-2" style="color: rgb(232, 232, 241);">
+<body class="body">
+    <hr class="my-2 nav_hr">
     <h1 class="text title typewrite" data-period="2000" data-type='[ "👋🏻 Hi! I am Ishan", "And I Love 💻 Computers.", "I Go By NooobScience Online ❤️", "And I Also Love Dogs 🐶." ]'></h1>
     <div class="main_text_div_border">
         <p class="lead main_text_div text">
@@ -70,7 +75,8 @@
             I am a huge fan of the command line interface and I like to interact with the computer through the command line. 
         </p>
     </div>
-    <div style="text-align: center; margin: 3%;"><button style="border: 0; background-color: rgba(245, 234, 234, 0);" class="animate__animated animate__pulse animate__repeat-3 3"><a href="#skills"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#f0f0f0" class="bi bi-chevron-compact-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/></svg></a></button></div>
+    <div style="text-align: center; margin: 3%;" id="white_btn"><button style="border: 0; background-color: rgba(245, 234, 234, 0);" class="animate__animated animate__pulse animate__repeat-3 3"><a href="#skills"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#f0f0f0" class="bi bi-chevron-compact-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/></svg></a></button></div>
+    <div style="text-align: center; margin: 3%;" id="dark_btn"><button style="border: 0; background-color: rgba(245, 234, 234, 0);" class="animate__animated animate__pulse animate__repeat-3 3"><a href="#skills"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#212121" class="bi bi-chevron-compact-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/></svg></a></button></div>
     <div id="skills" class="skills_div">
         <h2 class="title text display-1">Skills I Have</h2>
         <p class="lead text">
@@ -279,10 +285,74 @@
             </div>
         </div>
     </div>
+    <h2 class="display-3 text" style="text-align: center; padding: 12px;">Contact ME!</h2>
+    <div class="social_div">
+        <form style="padding: 1.8rem;">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Message</label>
+                <textarea type="text" class="form-control" rows="10" id="content"></textarea>
+                <div id="emailHelp" class="form-text">I'll get back to you as soon as I can</div>
+            </div>
+            <div style="text-align: center;">
+                <button type="button" class="submit_btn">
+                    <div class="svg-wrapper-1">
+                    <div class="svg-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                        </svg>
+                    </div>
+                    </div>
+                    <span>Send</span>
+                </button>
+            </div>
+        </form>
+    </div>
 </body>
 <script src="brain.js"></script>
 <script>
     $(document).ready(function(){
+        $("#dark_btn").toggle()
+        $("#theme_toggle").click(function(){
+            var theme = $("#theme").attr("href")
+            if (theme == "styles.css"){
+                $("#theme").attr("href", "dark_styles.css")
+                $("#ui_theme").attr("href", "dark_ui_styles.css")
+                $("#github").attr("src", "assets/logo-github_dark.svg")
+                $("#white_btn").toggle()
+                $("#dark_btn").toggle()
+            }
+            if (theme == "dark_styles.css"){
+                $("#theme").attr("href", "styles.css")
+                $("#ui_theme").attr("href", "ui_styles.css")
+                $("#github").attr("src", "assets/logo-github.svg")
+                $("#white_btn").toggle()
+                $("#dark_btn").toggle()
+            }
+        })
+        $(".submit_btn").click(function(){
+            $.ajax({
+                type: "POST",
+                url: "https://noobpaste.herokuapp.com/send_email",
+                data: {"name": $("#name").val(), "email": $("#email").val(), "content": $("#content").val()},
+                dataType: "json",
+                success: function(response) {
+                    alert("Sent Mail!")
+                },
+                error: function(err) {
+                    alert(err);
+                }
+            });
+        })
     })
 </script>
 <footer>

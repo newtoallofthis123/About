@@ -6,7 +6,7 @@
     color: rgb(235, 226, 226);
 }
 
-/* From cssbuttons.io by @adamgiebl */
+/* From css.submit_btns.io by @adamgiebl */
 
 .social_btn_insta {
     background: #e2213b;
@@ -437,4 +437,58 @@
 
 .social_btn_website:active .icon {
     transform: scale(0.95);
+}
+
+/* From uiverse.io by @adamgiebl */
+.submit_btn {
+    font-family: inherit;
+    font-size: 20px;
+    background: royalblue;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.submit_btn span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit_btn svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.submit_btn:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.submit_btn:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.submit_btn:hover span {
+    transform: translateX(5em);
+}
+
+.submit_btn:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+    transform: translateY(0.1em);
+    }
+
+    to {
+    transform: translateY(-0.1em);
+    }
 }

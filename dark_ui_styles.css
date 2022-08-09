@@ -7,8 +7,8 @@
 }
 .title_btn {
     --border-right: 6px;
-    --text-stroke-color: rgba(255,255,255,0.6);
-    --animation-color: #09f0dc;
+    --text-stroke-color: rgba(32, 30, 30, 0.6);
+    --animation-color: #eb0f0f;
     --fs-size: 2em;
     letter-spacing: 3px;
     text-decoration: none;
@@ -33,7 +33,7 @@
 }
 .title_btn:hover .hover-text {
     width: 100%;
-    filter: drop-shadow(0 0 23px var(--animation-color))
+    filter: drop-shadow(0 0 23px var(--animation-color));
 }
 
 /* From uiverse.io by @ShadowShahriar */
@@ -134,7 +134,7 @@
 .about_title span {
     position: absolute;
     font-family: "Oxygen Mono", 'Courier New', Courier, monospace;
-    color: #fff;
+    color: rgb(255, 2, 2);
     transform: translate(-50%, -50%);
     font-size: 4.2rem;
     letter-spacing: 5px;
@@ -142,12 +142,12 @@
 
 .about_title span:nth-child(1) {
     color: transparent;
-    -webkit-text-stroke: 0.3px rgb(10, 202, 250);
+    -webkit-text-stroke: 0.3px rgb(236, 13, 13);
 }
 
 .about_title span:nth-child(2) {
-    color: rgb(10, 202, 250);
-    -webkit-text-stroke: 1px rgb(10, 202, 250);
+    color: rgb(238, 14, 14);
+    -webkit-text-stroke: 1px rgb(238, 14, 14);
     animation: title_animate 3s ease-in-out infinite;
 }
 

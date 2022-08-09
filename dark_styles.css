@@ -1,9 +1,9 @@
 .body{
-    background-color: #212121;
+    background-color: #f0f0f0;
 }
 
 nav{
-    background-color: #212121;
+    background-color: #f0f0f0;
 }
 
 .nav_title{
@@ -16,7 +16,11 @@ nav{
 }
 
 .text{
-    color: #f0f0f0;
+    color: #212121;
+}
+
+#skills{
+    color: #212121;
 }
 
 .main_text_div{
@@ -24,11 +28,11 @@ nav{
     padding-right: 3%;
     padding-left: 3%;
     margin: 12px;
-    background-color: #212121;
+    background-color: #f0f0f0;
 }
 
 .main_text_div_border {
-    background: linear-gradient(to right, #e90505, #03f7ff);
+    background: linear-gradient(to right, #22ec08, #e20a0a);
     padding: 1px;
     border-radius: 12px;
     margin: 2%;
@@ -96,7 +100,7 @@ nav{
 }
 
 .dark{
-    background-color: #212121;
+    background-color: #f0f0f0;
 }
 
 .card-text{
@@ -125,8 +129,20 @@ nav{
     margin-bottom: 0px;
     padding: 3%;
     padding-top: 0px;
-    background-color: #f0f0f0;
+    background-color: #212121;
     border-radius: 12px;
+}
+
+.social_div h2{
+    color: #f0f0f0;
+}
+
+.social_div label{
+    color: #f0f0f0;
+}
+
+.social_div .form-text{
+    color: #f0f0f0;
 }
 
 .skills_div{
@@ -137,11 +153,16 @@ nav{
 
 .technologies_div{
     padding: 3%;
-    background-color: #f0f0f0;
+    background-color: #212121;
+}
+
+.technologies_div p{
+    color: #f0f0f0;
 }
 
 li{
     font-size: 1.4rem;
+    color: #f0f0f0;
     list-style: none;
     letter-spacing: 2px;
 }
@@ -149,5 +170,9 @@ li{
 .subscribe_div{
     padding: 1.8rem;
     text-align: center;
-    background-color: #212121;
+    background-color: #f0f0f0;
+}
+
+svg{
+    color: #212121;
 }
