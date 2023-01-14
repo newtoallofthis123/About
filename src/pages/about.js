@@ -7,19 +7,23 @@ const About = () => {
             <div style={{ "backgroundColor": "#75f0f3", }} className="nice_border">
                 <h1>Who are you?</h1>
                 <p>
-                    Hello! I am Ishan, I am a student and tech enthusiast. I go by <a href="https://github.com/newtoallofthis123" className="link">NoobScience</a> online.
-                    I love software and I am an huge fan of open source software. I am currently a college freshman, studying computer science and engineering.
-                    I love coding in <a href="https://python.org" className="link">python</a> and it is my primary language, although I am warming up to javascript. I am huge linux fan I love running virtual machines. I am love deep dives into how a application is built and
-                    decoding software. I also like open source projects that aim to replace their proprietary alternatives.
+                    Hello! I am Ishan. I am a tech-savvy student with a passion for software development, I am constantly seeking new opportunities to learn and grow in the field.
+                    My primary focus is on building full stack applications using the Flask API and MERN stack.
+                    Known online as NoobScience, I am also a strong advocate for open source software and Linux.
+                    Currently, I am studying computer science and engineering at <a href="http://griet.ac.in" className="link">GRIET</a>, where I specialize in coding with Python, and am also expanding my skills in JavaScript.
+                    I am passionate about understanding how software works, and particularly enjoy diving deep into the inner workings of applications and open source projects that aim to replace proprietary alternatives.
+                    With a strong foundation in technology and a deep love for open source software, I am excited to continue exploring new opportunities in the field. Let's <a href="https://newtoallofthis123.github.io/tree" className="link">connect</a>!
                 </p>
             </div>
             <div style={{ "backgroundColor": "#83f583", }} className="nice_border">
                 <h1>Interests</h1>
                 <p>
-                    I am into a lot of stuff. I am mostly on my computer, the rest of the time, I am with my friends or with my furry friend. I love playing <a href="https://minetest.net" className="link">Minetest</a> and Rocket League.
-                    I love dogs and I love my furry doggo {<Link to="/About/lyka" className="link">Lyka</Link>}. I am a huge fan of esports and keep up with the latest and greatest there.
-                    You can always find me on my <a href="https://twitter.com">twitter</a> and I am quite active there. Sometimes, the author in me prowls and I write neat blog articles.
-                    I have been pretty much in love with software and I enjoy building stuff.
+                    As a versatile individual with a passion for technology, I am constantly engaged in a variety of activities.
+                    Whether I am on my computer exploring the latest advancements in software development or spending time with friends and my beloved dog, Lyka,
+                    I am always striving to learn and grow. My interests include playing games such as Minetest and Rocket League,
+                    as well as following the latest developments in esports.
+                    Additionally, I enjoy writing and sharing my thoughts and ideas through my active Twitter presence and personal blog.
+                    With a strong background in software development and a love for creating, I am excited to continue pursuing new opportunities and challenges in this field.
                 </p>
             </div>
             <div style={{ "backgroundColor": "#f888d6", }} id="random" className="nice_border">
@@ -28,14 +32,15 @@ const About = () => {
                     <img src={profile} id="profile" style={{verticalAlign: "middle", borderRadius: "24px", padding: '12px', }} alt="" />
                 </div>
                 <p>
-                    I am quite into photos now a days. Maybe it is because I am learning GIMP, but be prepared to see a lot of photos.
-                    You can talk to me about pretty much anything. I am a big fan of sitcoms and minecraft.
-                    The Tech I use?
-                    I use a Lenovo ideapad3 laptop, a Samsung M13 Andriod Phone and a fitness tracker.
-                    I am a huge sucker for software customization and each and software I use are highly customized
-                    to suit my taste.
-                    I am looking to contribute to some open source projects and looking for contributors to mine as well.
-                    If you are interested in that, just hit me up on my <a href="mailto:noobscience@duck.com" className='link'>mail</a>.
+                    As a tech-savvy individual with a passion for innovation and experimentation, I am currently focused on mastering the JAMStack and exploring the MERN stack for web development.
+                    I am also deeply interested in the world of AI, and am fascinated by the capabilities of language models like ChatGPT.
+                    I have a broad range of interests and am always open to discussing new topics and ideas.
+
+                    My personal tech setup includes a Lenovo ideapad3 laptop, a Samsung M13 Android phone, and a fitness tracker.
+                    I am a huge fan of customizing my software to suit my needs and preferences, and I am always looking for ways to improve my workflow and productivity.
+
+                    I am also active on Github and am open to contributing to open-source projects or collaborating with other developers.
+                    If you're interested in connecting or working together, feel free to reach out to me via <a href="mailto:noobscience@duck.com" className="link">mail</a>. Let's connect and see how we can <Link to="/About/projects">create</Link> something amazing together.
                 </p>
             </div>
         </div>

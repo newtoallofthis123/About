@@ -1,7 +1,7 @@
 {
   "homepage": "https://newtoallofthis123.github.io/About/",
-  "name": "about",
-  "version": "0.3.2",
+  "name": "new_site",
+  "version": "1.1.2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.10.3",
     "jquery": "^3.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

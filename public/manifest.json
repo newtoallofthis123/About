@@ -1,6 +1,6 @@
 {
-  "short_name": "About",
-  "name": "NoobScience About Site",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",

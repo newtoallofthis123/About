@@ -71,4 +71,17 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    const mode = localStorage.getItem("mode") || "system";
+    let theme;
+    if (mode === "system") {
+      const isSystemInDarkMode = matchMedia("(prefers-color-scheme: dark)")
+        .matches;
+      theme = isSystemInDarkMode ? "dark" : "light";
+    } else {
+      // for light and dark, the theme is the mode
+      theme = mode;
+    }
+    document.body.classList.add(theme);
+  </script>
 </html>

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { useState } from "react"
+import { useState} from "react"
 import "./static/css/global.css"
 import icon from "./static/images/noobscience.png"
 
