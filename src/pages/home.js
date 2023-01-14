@@ -8,9 +8,9 @@ const Home = () => {
         <div>
             <h1 className='main_title'><span style={{ color: "#75f0f3" }}>I</span>shan <span style={{ color: "#7bf57b" }}>J</span>oshi</h1>
             <h3 className="sub_title"><Link to="/About/about" style={{ background: "#75f0f3" }}>Student</Link><Link to="/About/projects" style={{ background: "#f888d6" }}>Open Source</Link><Link to="/About/skills" style={{ background: "#95ee65" }}>Tech</Link></h3>
-            <h3 className="m_sub_title"><Link to="/About/about" style={{ background: "#75f0f3" }}>Student</Link></h3>
-            <h3 className="m_sub_title"><Link to="/About/projects" style={{ background: "#f888d6" }}>Open Source</Link></h3>
-            <h3 className="m_sub_title"><Link to="/About/skills" style={{ background: "#95ee65" }}>Full Stack Dev</Link></h3>
+            <h3 className="m_sub_title"><Link to="/About/about" style={{ background: "#75f0f3", borderRadius: "24px", padding: "12px", margin: "40px" }}>Student</Link></h3>
+            <h3 className="m_sub_title"><Link to="/About/projects" style={{ background: "#f888d6", borderRadius: "24px", padding: "12px" }}>Open Source</Link></h3>
+            <h3 className="m_sub_title"><Link to="/About/skills" style={{ background: "#95ee65", borderRadius: "24px", padding: "12px" }}>Full Stack Dev</Link></h3>
             <div id="header">
                 <div className="right">
                     <div style={{ textAlign: 'center', }}>

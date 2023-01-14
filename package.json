@@ -1,7 +1,7 @@
 {
   "homepage": "https://newtoallofthis123.github.io/About/",
   "name": "new_site",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
