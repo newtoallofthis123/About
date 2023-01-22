@@ -46,12 +46,12 @@ const NavBar = () => {
             <div className="nav">
                 <ul>
                     <li id="nav_title"><img src={icon} style={{ width: "32px", verticalAlign: "middle", borderRadius: "24px"  }} alt="NoobScience Icon" /> NoobScience</li>
-                    <li><Link className="hover_animation_underline" to={"/About"}>Home</Link></li>
-                    <li><Link className="hover_animation_underline" to={"/About/about"}>About</Link></li>
-                    <li><Link className="hover_animation_underline" to={"/About/projects"}>Projects</Link></li>
-                    <li><Link className="hover_animation_underline" to={"/About/skills"}>Skills</Link></li>
+                    <li><Link className="hover_animation_underline" to={"/"}>Home</Link></li>
+                    <li><Link className="hover_animation_underline" to={"/about"}>About</Link></li>
+                    <li><Link className="hover_animation_underline" to={"/projects"}>Projects</Link></li>
+                    <li><Link className="hover_animation_underline" to={"/skills"}>Skills</Link></li>
                     <li><a className="hover_animation_underline" href="https://github.com/newtoallofthis123"><i className="bi bi-github"></i> Github</a></li>
-                    <li><a className="hover_animation_underline" href="https://newtoallofthis123.github.io/tree">Social</a></li>
+                    <li><a className="hover_animation_underline" href="https://links.noobscience.rocks">Social</a></li>
                 </ul>
                 <hr />
             </div>
@@ -59,12 +59,12 @@ const NavBar = () => {
                 <ul>
                     <li id="nav_title"><img src={icon} style={{ width: "32px", verticalAlign: "middle", borderRadius: "24px" }} alt="NoobScience Icon" /> NoobScience <button onClick= {update_toggle} className="animate__animated animate__wobble animate__delay-1s animate__slow" id="op_toggle"><i id="nav_icon" className="bi bi-list"></i></button></li>
                     <div id="options">
-                        <li><Link to={"/About"}>Home</Link></li>
-                        <li><Link to={"/About/about"}>About</Link></li>
-                        <li><Link to={"/About/projects"}>Projects</Link></li>
-                        <li><Link to={"/About/skills"}>Skills</Link></li>
+                        <li><Link to={"/"}>Home</Link></li>
+                        <li><Link to={"/about"}>About</Link></li>
+                        <li><Link to={"/projects"}>Projects</Link></li>
+                        <li><Link to={"/skills"}>Skills</Link></li>
                         <li><a href="https://github.com/newtoallofthis123">Github</a></li>
-                        <li><a href="https://newtoallofthis123.github.io/tree">Social</a></li>
+                        <li><a href="https://links.noobscience.rocks">Social</a></li>
                     </div>
                 </ul>
             </div>

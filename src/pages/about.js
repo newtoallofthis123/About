@@ -40,7 +40,7 @@ const About = () => {
                     I am a huge fan of customizing my software to suit my needs and preferences, and I am always looking for ways to improve my workflow and productivity.
 
                     I am also active on Github and am open to contributing to open-source projects or collaborating with other developers.
-                    If you're interested in connecting or working together, feel free to reach out to me via <a href="mailto:noobscience@duck.com" className="link">mail</a>. Let's connect and see how we can <Link to="/About/projects">create</Link> something amazing together.
+                    If you're interested in connecting or working together, feel free to reach out to me via <a href="mailto:noobscience@duck.com" className="link">mail</a>. Let's connect and see how we can <Link to="/projects">create</Link> something amazing together.
                 </p>
             </div>
         </div>

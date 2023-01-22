@@ -14,19 +14,19 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route exact path='/About'>
+        <Route exact path='/'>
           <Home />
         </Route>
-        <Route path='/About/about'>
+        <Route path='/about'>
           <About />
         </Route>
-        <Route path='/About/projects'>
+        <Route path='/projects'>
           <Projects />
         </Route>
-        <Route path='/About/skills'>
+        <Route path='/skills'>
           <Skills />
         </Route>
-        <Route path='/About/lyka'>
+        <Route path='/lyka'>
           <Lyka />
         </Route>
       </Switch>
