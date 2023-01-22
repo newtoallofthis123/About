@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/About/static/css/main.95b7b88e.css",
-    "main.js": "/About/static/js/main.7ccfff1a.js",
-    "static/media/lyka_angry.png": "/About/static/media/lyka_angry.ff27f23f24abbd3c0752.png",
-    "static/media/lyka.png": "/About/static/media/lyka.395768d43a10df1f041b.png",
-    "static/media/resume.pdf": "/About/static/media/resume.712d4907ff722f56a441.pdf",
-    "static/media/profile.jpg": "/About/static/media/profile.12052ad7f29747fc6cd1.jpg",
-    "static/media/noobscience.png": "/About/static/media/noobscience.b22022503abb86f6f40f.png",
-    "index.html": "/About/index.html",
-    "main.95b7b88e.css.map": "/About/static/css/main.95b7b88e.css.map",
-    "main.7ccfff1a.js.map": "/About/static/js/main.7ccfff1a.js.map"
+    "main.css": "/static/css/main.95b7b88e.css",
+    "main.js": "/static/js/main.aabe78e3.js",
+    "static/media/lyka_angry.png": "/static/media/lyka_angry.ff27f23f24abbd3c0752.png",
+    "static/media/lyka.png": "/static/media/lyka.395768d43a10df1f041b.png",
+    "static/media/resume.pdf": "/static/media/resume.712d4907ff722f56a441.pdf",
+    "static/media/profile.jpg": "/static/media/profile.12052ad7f29747fc6cd1.jpg",
+    "static/media/noobscience.png": "/static/media/noobscience.b22022503abb86f6f40f.png",
+    "index.html": "/index.html",
+    "main.95b7b88e.css.map": "/static/css/main.95b7b88e.css.map",
+    "main.aabe78e3.js.map": "/static/js/main.aabe78e3.js.map"
   },
   "entrypoints": [
     "static/css/main.95b7b88e.css",
-    "static/js/main.7ccfff1a.js"
+    "static/js/main.aabe78e3.js"
   ]
 }
