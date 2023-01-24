@@ -366,7 +366,7 @@ a:hover {
 
 #header {
     width: 980px;
-    position: relative;
+    position: absolute;
     height: 300px;
     z-index: 2;
 }
@@ -374,7 +374,7 @@ a:hover {
 #header .left {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0; 
 }
 
 #header .left:hover {
@@ -435,4 +435,10 @@ code {
 
 #thanks {
     display: none;
+}
+
+.footer{
+    text-align: center;
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
 }

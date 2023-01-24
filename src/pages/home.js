@@ -18,7 +18,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="left">
-                    <h3 className="sub_title"><a className='website' href="https://github.com/newtoallofthis123/About"><span>This Website is Open Source!</span></a></h3>
+                    <h3 className="sub_title"><a className='website' href="https://github.com/newtoallofthis123/About"><span>Created with ❤️ and React</span></a></h3>
                 </div>
             </div>
         </div>

@@ -2,12 +2,25 @@ import profile from './static/images/profile.jpg'
 import { Link } from "react-router-dom"
 
 const About = () => {
+    const time = () => {
+        const date = new Date()
+        const hours = date.getHours()
+        if (hours >= 0 && hours < 12) {
+            return "Good Morning"
+        }
+        if (hours >= 12 && hours < 17) {
+            return "Good Afternoon"
+        }
+        if (hours >= 17 && hours < 24) {
+            return "Good Evening"
+        }
+    }
     return (
         <div className="about_div">
             <div style={{ "backgroundColor": "#75f0f3", }} className="nice_border">
                 <h1>Who are you?</h1>
                 <p>
-                    Hello! I am Ishan. I am a tech-savvy student with a passion for software development, I am constantly seeking new opportunities to learn and grow in the field.
+                    {time()}! I am Ishan. I am a tech-savvy student with a passion for software development, I am constantly seeking new opportunities to learn and grow in the field.
                     My primary focus is on building full stack applications using the Flask API and MERN stack.
                     Known online as NoobScience, I am also a strong advocate for open source software and Linux.
                     Currently, I am studying computer science and engineering at <a href="http://griet.ac.in" className="link">GRIET</a>, where I specialize in coding with Python, and am also expanding my skills in JavaScript.
