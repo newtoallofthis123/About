@@ -1,4 +1,4 @@
-import profile from './static/images/profile.jpg'
+import profile from './static/images/profile-pic.png'
 import { Link } from "react-router-dom"
 
 const About = () => {
