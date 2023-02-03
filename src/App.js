@@ -7,7 +7,13 @@ import About from './pages/about'
 import Skills from './pages/skills'
 import Projects from './pages/projects'
 import Navbar from './pages/navBar';
-import Lyka from './pages/lyka';
+import resume from './pages/static/pdf/resume.pdf'
+
+const Resume = () => {
+  return (
+    <iframe src={resume} style={{width: "100vw", height: "100vh"}} title="resume" frameborder="0"></iframe>
+  )
+}
 
 function App() {
   return (
@@ -26,8 +32,8 @@ function App() {
         <Route path='/skills'>
           <Skills />
         </Route>
-        <Route path='/lyka'>
-          <Lyka />
+        <Route path='/resume'>
+          <Resume />
         </Route>
       </Switch>
     </Router>
