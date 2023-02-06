@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.516a7b3a.css",
-    "main.js": "/static/js/main.6e5f405d.js",
-    "static/media/lyka_angry.png": "/static/media/lyka_angry.ff27f23f24abbd3c0752.png",
-    "static/media/lyka.png": "/static/media/lyka.395768d43a10df1f041b.png",
+    "main.css": "/static/css/main.96bd2763.css",
+    "main.js": "/static/js/main.879820bf.js",
     "static/media/resume.pdf": "/static/media/resume.712d4907ff722f56a441.pdf",
     "static/media/profile-pic.png": "/static/media/profile-pic.2f770d9100b760e7d282.png",
+    "service-worker.js": "/service-worker.js",
     "static/media/noobscience.png": "/static/media/noobscience.b22022503abb86f6f40f.png",
+    "static/media/react.svg": "/static/media/react.1a63f8b56153ca65177f9345e72fc3aa.svg",
     "index.html": "/index.html",
-    "main.516a7b3a.css.map": "/static/css/main.516a7b3a.css.map",
-    "main.6e5f405d.js.map": "/static/js/main.6e5f405d.js.map"
+    "main.96bd2763.css.map": "/static/css/main.96bd2763.css.map",
+    "main.879820bf.js.map": "/static/js/main.879820bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.516a7b3a.css",
-    "static/js/main.6e5f405d.js"
+    "static/css/main.96bd2763.css",
+    "static/js/main.879820bf.js"
   ]
 }
