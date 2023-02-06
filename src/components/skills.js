@@ -16,17 +16,12 @@ const Skills = () => {
                     <li>Jquery</li>
                     <li>Node</li>
                     <li>TypeScript</li>
-                    <li>Java</li>
                     <li>C</li>
-                    <li>C++</li>
                     <li>Postgresql</li>
                     <li>SQLite3</li>
                     <li>MongoDB</li>
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>Inkscape</li>
-                    <li>GIMP</li>
-                    <li>Video Editing</li>
                 </ul>
             </div>
             <div id="idealogy" style={{ "backgroundColor": "#75f0f3", }} className="nice_border">

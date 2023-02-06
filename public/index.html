@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#f1fa00" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
     <meta property="og:title" content="NoobScience">
     <meta property="og:description" content="Student and Open Source Enthusiast. I Like to Code Stuff. Check out my work!">
     <meta property="og:image"
-      content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+      content="%PUBLIC_URL%/assets/banner.png">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -33,7 +33,7 @@
     <meta property="twitter:description"
       content="Student and Open Source Enthusiast. I Like to Code Stuff. Check out my work!">
     <meta property="twitter:image"
-      content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+      content="%PUBLIC_URL%/assets/banner.png">
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -71,17 +71,4 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-  <script>
-    const mode = localStorage.getItem("mode") || "system";
-    let theme;
-    if (mode === "system") {
-      const isSystemInDarkMode = matchMedia("(prefers-color-scheme: dark)")
-        .matches;
-      theme = isSystemInDarkMode ? "dark" : "light";
-    } else {
-      // for light and dark, the theme is the mode
-      theme = mode;
-    }
-    document.body.classList.add(theme);
-  </script>
 </html>

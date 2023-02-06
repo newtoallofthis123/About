@@ -3,7 +3,7 @@ import { useState} from "react"
 import "./static/css/global.css"
 import icon from "./static/images/noobscience.png"
 
-const NavBar = () => {
+const Nav = () => {
     const [op_toggle, toggle_set] = useState(0)
     const update_toggle = () => { 
         const options = document.querySelector("#options")
@@ -49,20 +49,20 @@ const NavBar = () => {
         <div>
             <div className="nav">
                 <ul>
-                    <li id="nav_title"><img src={icon} style={{ width: "32px", verticalAlign: "middle", borderRadius: "24px" }} alt="NoobScience Icon" /> NoobScience {year()}</li>
+                    <li id="nav_title"><img src={icon} style={{ width: "32px", verticalAlign: "middle", borderRadius: "24px" }} alt="NoobScience Icon" /> <span onClick={() => {window.location = "/"}}>NoobScience</span></li>
                     <li><Link className="hover_animation_underline" to={"/"}>Home</Link></li>
                     <li><Link className="hover_animation_underline" to={"/about"}>About</Link></li>
                     <li><Link className="hover_animation_underline" to={"/projects"}>Projects</Link></li>
                     <li><Link className="hover_animation_underline" to={"/skills"}>Skills</Link></li>
                     <li><Link className="hover_animation_underline" to={"/resume"}>Resume</Link></li>
                     <li><a className="hover_animation_underline" href="https://github.com/newtoallofthis123"><i className="bi bi-github"></i> Github</a></li>
-                    <li><a className="hover_animation_underline" href="https://links.noobscience.rocks">Social</a></li>
+                    <li><a className="hover_animation_underline" href="https://links.noobscience.rocks">🔗 Social</a></li>
                 </ul>
                 <hr />
             </div>
             <div className="m_nav">
                 <ul>
-                    <li id="nav_title"><img src={icon} style={{ width: "32px", verticalAlign: "middle", borderRadius: "24px" }} alt="NoobScience Icon" /> NoobScience <button onClick= {update_toggle} className="animate__animated animate__wobble animate__delay-1s animate__slow" id="op_toggle"><i id="nav_icon" className="bi bi-list"></i></button></li>
+                    <li id="nav_title"><img src={icon} style={{ width: "32px", verticalAlign: "middle", borderRadius: "24px" }} alt="NoobScience Icon" /> <span onClick={() => {window.location = "/"}}>NoobScience</span> ➡️ <button onClick= {update_toggle} className="animate__animated animate__wobble animate__delay-1s animate__slow" id="op_toggle"><i id="nav_icon" className="bi bi-list"></i></button></li>
                     <div id="options">
                         <li><Link to={"/"}>Home</Link></li>
                         <li><Link to={"/about"}>About</Link></li>
@@ -78,4 +78,4 @@ const NavBar = () => {
     )
 }
 
-export default NavBar
+export default Nav
