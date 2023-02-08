@@ -3,20 +3,7 @@ import "./static/css/global.css"
 import { Link } from 'react-router-dom'
 import profile from "./static/images/profile-pic.png"
 import Typewriter from "./typewriter";
-
-const time = () => {
-    const date = new Date()
-    const hours = date.getHours()
-    if (hours >= 0 && hours < 12) {
-        return "Good Morning"
-    }
-    if (hours >= 12 && hours < 17) {
-        return "Good Afternoon"
-    }
-    if (hours >= 17 && hours < 24) {
-        return "Good Evening"
-    }
-}
+// import Cli from "./cli";
 
 const Home = () => {
     const toast_toggle = () => {
@@ -28,7 +15,8 @@ const Home = () => {
             <div id="toast" className="new">
                 New Project 🥳 <a href="https://peep.noobscience.rocks">peep</a>! <i onClick={toast_toggle} style={{cursor: "pointer"}} className="bi bi-x"></i>
             </div>
-            <h1 className="header_title">{time()}! I am </h1>
+            {/* <Cli></Cli> */}
+            {/*<h1 className="header_title">{time()}! I am </h1>*/}
             <h1 className='main_title'><img src={profile} className="profile-pic" alt="Profile Pic" /><span style={{ color: "#75f0f3" }}>I</span>shan <span style={{ color: "#7bf57b" }}>J</span>oshi</h1>
             <p className="typewriter">
                 and I <Typewriter data={does} />

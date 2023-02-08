@@ -349,6 +349,45 @@ code {
     background-color: #faf348;
 }
 
+.cli_div{
+    margin: 3.2rem 3.2rem 1.2rem;
+    padding: 12px;
+    background-color: #282828;
+    border-radius: 12px;
+}
+
+.cli_div button{
+    border: 0;
+    background-color: #282828;
+    font-size: 1rem;
+    color: white;
+}
+
+.cli{
+    border: 0;
+    background-color: #282828;
+    width: 90%;
+    font-family: "Fira Code", "Courier New", Courier, monospace;
+    font-size: 1rem;
+    color: #0ef60e;
+}
+
+.cli:focus{
+    outline: none;
+}
+
+.cli_output p {
+    font-family: "Fira Code", "Courier New", Courier, monospace;
+    font-size: 1rem;
+    color: white;
+    width: 90%;
+    margin-left: 4.0rem;
+}
+
+.send_btn{
+    border: 0;
+}
+
 @media screen and (max-width: 1020px) {
     .nav {
         display: none;
