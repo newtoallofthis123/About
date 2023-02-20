@@ -41,15 +41,11 @@ const Nav = () => {
             });
         }
     }
-    const year = () => {
-        let date = new Date()
-        return date.getFullYear()
-    }
     return (
         <div>
             <div className="nav">
                 <ul>
-                    <li id="nav_title"><img src={icon} style={{ width: "32px", verticalAlign: "middle", borderRadius: "24px" }} alt="NoobScience Icon" /> <span onClick={() => {window.location = "/"}}>NoobScience</span></li>
+                    <li id="nav_title"><img src={icon} width="32" style={{ width: "32px", verticalAlign: "middle", borderRadius: "24px" }} alt="NoobScience Icon" /> <span onClick={() => {window.location = "/"}}>NoobScience</span></li>
                     <li><Link className="hover_animation_underline" to={"/"}>Home</Link></li>
                     <li><Link className="hover_animation_underline" to={"/about"}>About</Link></li>
                     <li><Link className="hover_animation_underline" to={"/projects"}>Projects</Link></li>

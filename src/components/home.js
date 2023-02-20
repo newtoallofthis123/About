@@ -1,7 +1,7 @@
 import React from 'react'
 import "./static/css/global.css"
 import { Link } from 'react-router-dom'
-import profile from "./static/images/profile-pic.png"
+import profile from "./static/images/profile-pic.webp"
 import Typewriter from "./typewriter";
 // import Cli from "./cli";
 
@@ -17,14 +17,14 @@ const Home = () => {
             </div>
             {/* <Cli></Cli> */}
             {/*<h1 className="header_title">{time()}! I am </h1>*/}
-            <h1 className='main_title'><img src={profile} className="profile-pic" alt="Profile Pic" /><span style={{ color: "#75f0f3" }}>I</span>shan <span style={{ color: "#7bf57b" }}>J</span>oshi</h1>
+            <h1 className='main_title'><img src={profile} className="profile-pic" width="120px" alt="Profile Pic" /><span style={{ color: "#75f0f3" }}>I</span>shan <span style={{ color: "#7bf57b" }}>J</span>oshi</h1>
             <p className="typewriter">
                 and I <Typewriter data={does} />
             </p>
-            <h3 className="sub_title"><Link to="/about" style={{ background: "#75f0f3" }}>Student</Link><Link to="/skills" style={{ background: "#95ee65" }}>Full Stack Dev</Link><Link to="/projects" style={{ background: "#f888d6" }}>Open Source</Link></h3>
-            <h3 className="m_sub_title"><Link to="/about" style={{ background: "#75f0f3", borderRadius: "12px", padding: "12px", margin: "40px" }}>Student</Link></h3>
-            <h3 className="m_sub_title"><Link to="/skills" style={{ background: "#95ee65", borderRadius: "12px", padding: "12px" }}>Full Stack Dev</Link></h3>
-            <h3 className="m_sub_title"><Link to="/projects" style={{ background: "#f888d6", borderRadius: "12px", padding: "12px" }}>Open Source</Link></h3>
+            <h2 className="sub_title"><Link to="/about" style={{ background: "#75f0f3" }}>Student</Link><Link to="/skills" style={{ background: "#95ee65" }}>Full Stack Dev</Link><Link to="/projects" style={{ background: "#f888d6" }}>Open Source</Link></h2>
+            <h2 className="m_sub_title"><Link to="/about" style={{ background: "#75f0f3", borderRadius: "12px", padding: "12px", margin: "40px" }}>Student</Link></h2>
+            <h2 className="m_sub_title"><Link to="/skills" style={{ background: "#95ee65", borderRadius: "12px", padding: "12px" }}>Full Stack Dev</Link></h2>
+            <h2 className="m_sub_title"><Link to="/projects" style={{ background: "#f888d6", borderRadius: "12px", padding: "12px" }}>Open Source</Link></h2>
         </div>
     )
 }
