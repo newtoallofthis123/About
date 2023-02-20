@@ -11,8 +11,6 @@ import Navbar from './components/nav';
 import resume from './components/static/pdf/resume.pdf'
 import react_img from './components/static/images/react.svg'
 
-import { BounceLoader } from 'react-spinners';
-
 const Resume = () => {
   return (
     <iframe src={resume} style={{width: "100vw", height: "100vh"}} title="resume" frameborder="0"></iframe>
@@ -35,9 +33,9 @@ const Footer = () => {
 function App() {
   setTimeout(() => {
     setLoading(false)
-  }, 2000)
+  }, 1500)
   const [loading, setLoading] = React.useState(true)
-  const quotes = ["I ❤️ React", "You look cool 😎", "Wanna Talk?"]
+  const quotes = ["I ❤️ React", "You look cool 😎", "Let's Connect!🙂"]
   if (loading) {
     return (
       <div style={{

@@ -7,8 +7,8 @@ html {
 }
 
 :root {
-    --selection_color: rgb(255, 255, 255);
-    --selection_background: rgb(10, 10, 225);
+    --selection_color: rgb(0, 0, 0);
+    --selection_background: rgb(212, 247, 249);
     --color: #000;
     --bg: #fff;
 }
@@ -16,9 +16,9 @@ html {
 @media (prefers-color-scheme: dark) {
   :root {
       --selection_color: rgb(0, 0, 0);
-      --selection_background: rgba(0, 247, 255, 0.62);
-      --color: #ffffff;
-      --bg: #191818;
+      --selection_background: rgb(255, 242, 0);
+      --color: #ebe7e7;
+      --bg: #121111;
   }
 }
 
@@ -386,6 +386,10 @@ code {
 
 .send_btn{
     border: 0;
+}
+
+.m_footer{
+    display: none;
 }
 
 @media screen and (max-width: 1020px) {
