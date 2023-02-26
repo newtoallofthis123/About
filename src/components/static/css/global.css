@@ -8,17 +8,17 @@ html {
 
 :root {
     --selection_color: rgb(0, 0, 0);
-    --selection_background: rgb(212, 247, 249);
+    --selection_background: rgb(255, 242, 0);
     --color: #000;
     --bg: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-      --selection_color: rgb(0, 0, 0);
-      --selection_background: rgb(255, 242, 0);
-      --color: #ebe7e7;
-      --bg: #121111;
+    --selection_color: rgb(0, 0, 0);
+    --selection_background: rgb(212, 247, 249);
+    --color: #ebe7e7;
+    --bg: #121111;
   }
 }
 
