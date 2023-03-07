@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
@@ -30,9 +29,7 @@ console.log("This site is open source. " +
     "HopeFully there are no bugs. If you find any, please let me know by opening an issue.")
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+   <App/>
   </React.StrictMode>
 );
 serviceWorkerRegistration.register();

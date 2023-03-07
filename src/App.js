@@ -1,6 +1,11 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import React from 'react';
 
 import Home from './components/home'
@@ -31,60 +36,21 @@ const Footer = () => {
 }
 
 function App() {
-  setTimeout(() => {
-    setLoading(false)
-  }, 1500)
-  const [loading, setLoading] = React.useState(true)
-  const quotes = ["I ❤️ React", "You look cool 😎", "Let's Connect!🙂"]
-  if (loading) {
     return (
-      <div style={{
-        flex: 1,
-        marginTop: 240,
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}>
-        <section class="loader">
-          <div style={{"--i":0}} className="slider">
-          </div>
-          <div style={{"--i":1}} className="slider">
-          </div>
-          <div style={{"--i":2}} className="slider">
-          </div>
-          <div style={{"--i":3}} className="slider">
-          </div>
-          <div style={{"--i":4}} className="slider">
-          </div>
-        </section>
-        <h1 className='title' style={{ color: "var(--color)", }}>{quotes[Math.floor(Math.random() * quotes.length)]}</h1>
-      </div>
-    )
-  }
-  else {
-    return (
-      <Router>
+      <BrowserRouter>
         <Navbar />
-        <Switch>
-          <Route exact path="/">
-            <Home />
+        <Routes>
+          <Route exact path="/" element={<Home />}>
           </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/projects">
-            <Projects />
-          </Route>
-          <Route exact path="/skills">
-            <Skills />
-          </Route>
-          <Route exact path="/resume">
-            <Resume />
-          </Route>
-        </Switch>
+          <Route exact path="/about" element={<About />}/>
+          <Route exact path="/projects" element={<Projects />} />
+          <Route exact path="/skills" element={<Skills />} />
+          <Route exact path="/resume" element={<Resume />} />
+          <Route exact path="/notes" element={<Navigate replace to="/notes/index.html" />} />
+        </Routes>
         <Footer />
-      </Router>
+      </BrowserRouter>
     );
   }
-}
 
 export default App;
