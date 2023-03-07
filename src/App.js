@@ -4,7 +4,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Navigate,
 } from "react-router-dom";
 import React from 'react';
 
@@ -40,13 +39,11 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Home />}>
-          </Route>
+          <Route exact path="/" element={<Home />}/>
           <Route exact path="/about" element={<About />}/>
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/skills" element={<Skills />} />
           <Route exact path="/resume" element={<Resume />} />
-          <Route exact path="/notes" element={<Navigate replace to="/notes/index.html" />} />
         </Routes>
         <Footer />
       </BrowserRouter>

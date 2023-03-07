@@ -40,6 +40,22 @@ const Projects = () => {
                     <button style={{ backgroundColor: '#8aff67', }} className="download"><a href="https://shortpaw.herokuapp.com">Visit the Site</a></button>
                 </div>
             </div>
+            <div style={{ backgroundColor: "#ff9cc7", }} className="nice_border">
+                <h2>Notes for School</h2>
+                <p style={{ marginTop: '1.2rem', }}>
+                    Everytime I had a semester exam or a test, I would always start writing notes from the beginning of the semester.
+                    I would write notes for every chapter and then I would revise them before the exam.
+                    So I thought why not make a website where I can write notes and revise them whenever I want.
+                    So I made this website where I write notes of most of my subjects and I can revise them whenever I want.
+                    The website is made using HTML, CSS only.
+                    You can find notes in a neat, simple UI.
+                    Hope you like it.
+                </p>
+                <div style={{ textAlign: 'center' }}>
+                    <button style={{ backgroundColor: '#f6ff00', margin: '1.8rem', }} className="download"><a href="/notes/"><i className="bi bi-journal"></i> Read the Notes</a></button>
+                    <button style={{ backgroundColor: '#8aff67', }} className="download"><a href="https://github.com/newtoallofthis123/About/tree/main/public/notes">Contribute</a></button>
+                </div>
+            </div>
             <div style={{ backgroundColor: "#ff9c9c", }} className="nice_border">
                 <h2>ReactSite</h2>
                 <p style={{ marginTop: '1.2rem', }}>
