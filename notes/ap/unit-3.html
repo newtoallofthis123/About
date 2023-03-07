@@ -3,14 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="../styles.css">
 	<link rel="shortcut icon" href="https://noobscience.rocks/favicon.ico" type="image/x-icon">
 	<title>Applied Physics Notes</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Mono&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat&family=Yeseva+One&display=swap"
-        rel="stylesheet">
 </head>
 <nav>
     <h1>Applied Physics</h1>
@@ -20,11 +15,11 @@
 	<h2>LED : Light Emitting Diode</h2>
 	<p>
 		<u>Summary: </u><br>
-		PN Juntion diode that is foward biased.
+		PN Junction diode that is forward biased.
 	</p>
 	<ul>
 		<li>
-			Amout of light is directly proportional to foward current
+			Amount of light is directly proportional to forward current
 		</li>
 		<li>
 			hν = Eg <br>
@@ -39,9 +34,9 @@
 	<p>
 		Light is generated <em>perpendicular</em> to the apparatus.
 		<br>
-		The n type layer is grown on a substrate and p type is grown on it using difussion.
+		The n type layer is grown on a substrate and p type is grown on it using diffusion.
 		<br>
-		P type layer is very thin to prevent loss of photons during emmission.
+		P type layer is very thin to prevent loss of photons during emission.
 		<br>
 		The device is surrounded in epoxy resin to prevent loss of photons due to TIR.
 	</p>
@@ -51,7 +46,7 @@
 	<h2>Working of LED</h2>
 	<ul>
 		<li>
-			The PN Juntion is foward biased so e<sup>-</sup> go to p<sup>+</sup>
+			The PN Junction is forward biased so e<sup>-</sup> go to p<sup>+</sup>
 		</li>
 		<li>
 			Photos are released due to the recombination of these electrons with holes. This effect is called injection electro luminicence.
@@ -79,7 +74,7 @@
 	<p>
 		If the amount of free charge carriers are increased in a semi conductor, the photo conductivity increases leading to the release of more photons
 	</p>
-	<h2>PhotoDectors</h2>
+	<h2>PhotoDetectors</h2>
 	<p>
 		These are used to detect light by first converting optical energy to electric energy and measuring the electric energy.
 		These are <em>Revere biased</em> pn junction diodes.
@@ -89,7 +84,50 @@
 		<br>
 		The hole is attracted to the n type layer and the electron is attracted to the p type layer.
 		<br>
-		This causes a current to flow in the circuit.
+		The electric field due to the immobile charges in the depletion layer causes the electron to move to the n type layer and the hole to move to the p type layer.
+	</p>
+	<h3>Photoconductive Mode</h3>
+	<p>
+		Device is reverse biased and left at short circuit.
+		<br>
+		Dark currents ie current due to minority carriers flows.
+		<br>
+		Increase in depletion layer width due to the generation of electron hole pair.
+	</p>
+	<h3>Photovoltaic Mode</h3>
+	<p>
+		Device is left at open circuit.
+		<br>
+		Current is generated due to the flow of electrons from n type to p type.
+		<br>
+		The diode is not biased hence no dark currents flow.
+		<br>
+		This is the mode of operation in solar cells.
+	</p>
+	<h2>Types of PhotoDetectors</h2>
+	<p>
+		PhotoDetectors are mainly of two types:
+		<ul>
+			<li>PIN</li>
+			<li>Avalanche Detector</li>
+		</ul>
+	</p>
+	<h3>PIN: PhotoDetector</h3>
+	<div>
+		<img src="static/pin.png" alt="PIN PhotoDetector">
+	</div>
+	<p>
+		Device consisting of a p type layer, an intrinsic layer and an n type layer.
+		The p type layer is heavily doped and the n type layer is lightly doped.
+		<br>
+		The intrinsic layer is grown on top of the p type layer and the n type layer is grown on top of the intrinsic layer.
+		<br>
+		The intrinsic layer acts as the depletion region.
+		<br>
+		<em>PIN PhotoDetector is reversed biased</em>
+		<br>
+		When a photon having energy greater than or equal to band gap energy is incident on the depletion region, then
+		electron-hole pairs are generated.
 	</p>
 </body>
 <footer class="credit">
