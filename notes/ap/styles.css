@@ -1,0 +1,102 @@
+::selection{
+    background-color: #fbee00;
+    color: #000;
+    line-height: 1.8rem;
+}
+
+body {
+    background-color: #f3efef;
+    color: #1a1919;
+    font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
+    margin: 0 20vw;
+    line-height: 2rem;
+}
+
+h1 {
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+h2 {
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+}
+
+h3,h4,h5{
+    font-family: "Yeseva One", 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+p,li {
+    font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+img {
+    height: auto;
+}
+
+b {
+    font-weight: 700;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    font-weight: 700;
+}
+
+/* Custom Classes */
+.disclaimer {
+    background-color: #f5cccc;
+    padding: 2px 12px;
+    border-radius: 12px;
+}
+
+blockquote{
+    font-family: "Libre Baskerville", 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    font-style: italic;
+    border-left: 4px solid #1a1919;
+    padding-left: 1rem;
+}
+
+nav{
+    background-color: #f3efef;
+    padding: 0.2rem 0;
+    margin: 0 -1vw;
+}
+
+nav h1{
+    font-size: 2rem;
+    line-height: 3.6rem;
+    text-decoration: overline;
+    text-decoration-thickness: 0.2rem;
+}
+
+.credit{
+    font-size: 18px;
+    line-height: 1.8rem;
+    position: sticky;
+    bottom: 0;
+    padding: 0.2rem 0;
+    margin: 0 -1vw;
+    background-color: #f3efef;
+    z-index: 1;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        margin: 0 10vw;
+    }
+    img{
+        width: 100%;
+    }
+}
