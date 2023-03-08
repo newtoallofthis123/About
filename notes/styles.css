@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Yeseva+One&display=swap');
 
 ::selection{
-    background-color: #fbee00;
+    background-color: #f7ee50;
     color: #000;
     line-height: 1.8rem;
 }
@@ -37,6 +37,7 @@ p,li {
 
 img {
     height: auto;
+    width: 480px;
 }
 
 b {
