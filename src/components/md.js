@@ -8,6 +8,14 @@ const Md = () => {
         setMd(e.target.value)
         setHtml(marked(e.target.value))
     }
+    const copyMd = () => {
+        navigator.clipboard.writeText(md)
+        window.alert("Copied Markdown")
+    }
+    const copyHtml = () => {
+        navigator.clipboard.writeText(html)
+        window.alert("Copied HTML")
+    }
     return (
         <div>
             <h1 className="text">Markdown</h1>
@@ -17,6 +25,10 @@ const Md = () => {
             <div className="markdown"> 
                 <div>
                     <textarea name="md" id="md" onChange={handleChange} cols="30">{md}</textarea>
+                    <div style={{textAlign: "center",}}>
+                        <button onClick={copyMd}>Copy Markdown</button>
+                        <button onClick={copyHtml}>Copy HTML</button>
+                    </div>
                 </div>
                 <div className="converted_md" dangerouslySetInnerHTML={{ __html: html }}></div>
             </div>
