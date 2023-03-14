@@ -28,7 +28,7 @@ const Tool = () => {
                     <Link className="text-link link" to="/tools/git">Git Info</Link> - Get info about a GitHub repo.
                 </li>
                 <li>
-                    <Link className="text-link link" to="/tools/git">Random Generator</Link> - Generate random identity.
+                    <Link className="text-link link" to="/tools/random">Random Generator</Link> - Generate random identity.
                 </li>
             </ol>
             <p className="center">

@@ -4,8 +4,8 @@ const Editor = () => {
     const [text, setText] = useState("");
     const [file, setFile] = useState("");
     window.onload = () => {
-        if (localStorage.getItem("editor") === null && localStorage.getItem("texts") === null | localStorage.setItem("current", "") === null) {
-            localStorage.setItem("texts", "");
+        if (localStorage.getItem("editor") === null | localStorage.getItem("texts") === null | localStorage.getItem("current", "") === null) {
+            localStorage.setItem("texts", ",");
             localStorage.setItem("editor", "");
             localStorage.setItem("current", "");
         }
@@ -76,7 +76,7 @@ const Editor = () => {
                     </p>
                     {getItems().map((file) => {
                         return (
-                            <div className="text">
+                            <div key={file} className="text">
                                 <button onClick={() => { loadFile(file) }}>
                                     <p>{file}</p>
                                 </button>
