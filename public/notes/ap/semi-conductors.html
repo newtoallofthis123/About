@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>Applied Physics Notes</title>
+</head>
+<nav>
+    <h1>Applied Physics</h1>
+</nav>
+<body>
+<h1 id="semi-conductors">Semi Conductors</h1>
+<ul>
+    <li>Fermi level inbetween conductors and insulators</li>
+    <li>Chemically pure semiconductors are called intrinsic semiconductors</li>
+    <li>Others are called extrinsic conductors</li>
+    <li>The differences between the both are given below</li>
+    <li><img src="static/intrinsic.png" alt="semi Conductors"></li>
+    <li>When a intrinsic semiconductor is doped with a pentavalent impurity: n type</li>
+    <li>When a intrinsic semiconductor is doped with a trivalent impurity: p type</li>
+    <li>Below given is p vs n energy diagram</li>
+    <li><img src="static/energy_level.png" alt="Energy Diagram"></li>
+</ul>
+<ul>
+    <li>
+        <p>As seen in the above figure, the donor energy level is nearer to the conduction band in the n type
+            semiconductor, hence the conductivity is a lot more.</p>
+    </li>
+    <li>
+        <h2 id="wip---energy-level-distributions">WIP - Energy Level Distributions</h2>
+    </li>
+</ul>
+<h2 id="drift-current">Drift Current</h2>
+<ul>
+    <li>Under the condition of thermal equilibrium, the electrons and holes are uniformly distributed in a crystal and
+        when no external field is applied current does not flow in the crystal.</li>
+    <li>When an electric field E is applied to a semiconductor, the charge carriers(electrons and holes) start to move
+        and produce drift current.</li>
+    <li>The electrons drifting in the conduction band produce a drift current J<sub>e</sub> = neµ<sub>e</sub>E</li>
+    <li>Similarly, holes drifting in the valence band produce a drift current of J<sub>e</sub> = peµ<sub>h</sub>E</li>
+    <li>Hence, total drift current is J<sub>drift</sub> = neµ<sub>e</sub>E + peµ<sub>h</sub>E</li>
+    <li>Although they move in different directions, the resultant carrier current is in the same direction</li>
+</ul>
+<h2 id="diffusion-current">Diffusion Current</h2>
+<ul>
+    <li>
+        The charge carriers(electrons and holes) diffuse from regions of high concentration to regions of low concentration until the
+        charge carriers are evenly distributed in the material. This motion of charge carriers produce a current component known
+        as diffusion current.
+    </li>
+    <li>
+        This happens without the application of an external electric field.
+    </li>
+    <li>
+        The diffusion current is given by J<sub>e</sub>(diff) = D<sub>eff</sub>∇n
+    </li>
+    <li>
+        Where D<sub>eff</sub> is the effective diffusion coefficient. Given by 
+        D<sub>e</sub> dn/dx
+    </li>
+    <li>
+        Hence, total is J<sub>diff</sub> = D<sub>eff</sub>∇n - D<sub>eff</sub>∇p
+    </li>
+    <li>
+        The diffusion current is in the opposite direction to the drift current.
+    </li>
+    <li>
+        Hence, the total current is J = J<sub>drift</sub> + J<sub>diff</sub> 
+    </li>
+    <li>
+        The total current is given by J = neµ<sub>e</sub>E + peµ<sub>h</sub>E + D<sub>eff</sub>∇n + D<sub>eff</sub>∇p
+    </li>
+</ul>
+<h1 id="pn-junction">PN Junction</h1>
+<ul>
+	<li>A P-N Junction is formed when a p-type and n-type conductor are joined together by the process of crystal growth.</li>
+	<li>The transition between p to n type is called the junction</li>
+	<li><img src="static/pn.png" alt="PN Junction"></li>
+	<li>Holes and electrons diffuse from p-region to n-region and vice versa at the junction.</li>
+	<li>Electrons and holes recombine and disappear at the junction region.</li>
+	<li>Space charge region exists around the junction where only immobile ions are present.</li>
+	<li>The depletion region is the same as the space charge region.</li>
+	<li>Fixed ions in the depletion region produce an electric field, E.</li>
+	<li>This electric field opposes further diffusion of electrons and holes from n-type to p-type region.</li>
+	<li>The electric field creates a potential barrier.</li>
+	<li>Overcoming the potential barrier is required for further diffusion of electrons and holes across it.</li>
+	<li>This is called the depletion layer. </li>
+</ul>
+<h2 id="biases">Biases</h2>
+<ul>
+    <li>Under unbiased condition no net current flows and fermi level is common on n side and p side</li>
+    <li>V<sub>o</sub> = V<sub>n</sub> - V<sub>p</sub></li>
+    <li>The electric field is given by E = E<sub>vp</sub> - E<sub>vn</sub></li>
+    <li>Anode is +ively charged and Cathode is -ively charged</li>
+    <li>In forward bias, depletion layer is less and resistance is less</li>
+    <li>In reverse bias, depletion layer is more and resistance is more</li>
+    <li><em>Forward biased circuit</em>:</li>
+    <li>When the positive terminal of the source (battery) is connected to p region and negative terminal to n region,
+        the junction is said to be forward biased.</li>
+    <li><em>Reverse biased circuit</em>:</li>
+    <li>When the positive terminal of the source (battery) is connected to n region and negative terminal to p region,
+        the junction is said to be reverse biased.</li>
+    <li>In forward bias, majority of charge carriers move across the junction and voltage across the junction decreases
+        by V<sub>o</sub> - V<sub>f</sub></li>
+    <li>In reverse bias the voltage across the junction increases and width of depletion layer increases</li>
+</ul>
+<h2 id="iv-characteristics">IV Characteristics</h2>
+<ul>
+    <li>The P-N Junction is non linear</li>
+    <li>The pn junction acts as a closed switch in forward bias condition allowing large current to flow through it, and
+        acts as an open switch in reverse bias condition causing a very small amount of current to flow through it.</li>
+    <li><img src="static/pn_iv.png" alt="PN IV"></li>
+</ul>
+<h3 id="forward-bias">Forward Bias</h3>
+<ul>
+    <li>As long as the forward voltage is less than voltage of potential barrier, the current is negligible</li>
+    <li>The voltage at which the current sharply increases is the knee voltage.</li>
+    <li>Knee voltage for <em>Germanium</em>: 0.3v and <em>Silicon</em>: 0.7v</li>
+</ul>
+<h3 id="reverse-bias">Reverse Bias</h3>
+<ul>
+    <li>A small reverse current flows in the circuit</li>
+    <li>When the reverse voltage is high enough, it breaks the covalent bonds in the crystal and a large number of
+        charge carriers are produced. This is called as a breakdown</li>
+    <li>The diode break down may be due to Avalanche break down or due to Zener break down.</li>
+    <li>Avalanche break down occurs in diodes which are lightly doped.</li>
+    <li>Zener break down occurs in diodes which are thin and heavily doped.</li>
+</ul>
+<h2 id="zener-diode">Zener Diode</h2>
+<ul>
+    <li>Zener diode is a semiconductor diode specially designed to operate in the breakdown region of the reverse bias.
+        Zener diodes are always operated in the reverse bias condition. The breakdown phenomenon is reversible and
+        harmless.</li>
+    <li><img src="static/zener.png" alt="Zener"></li>
+    <li>It acts as a normal diode in forward bias</li>
+    <li>In reverse bias condition, as the reverse voltage is increased a small amount of current called leakage current
+        flows. Leakage current is due to minority charge carriers.</li>
+    <li>At a particular value of reverse voltage, the current increases suddenly. This voltage is called breakdown
+        voltage or Zener voltage, VZ.</li>
+    <li>In ordinary diodes the breakdown voltage is high and if reverse current is allowed to flow, then the diode will
+        be damaged.</li>
+    <li>Zener diodes are designed so that their Zener voltage is much lower, about 2.4 volts.</li>
+    <li>Location of the zener breakdown can be controlled using doping levels</li>
+</ul>
+<h2 id="hall-effect">Hall Effect</h2>
+<ul>
+    <li>When a piece of conductor (metal or semiconductor) carrying current is placed in a transverse (perpendicular)
+        magnetic field, an electric field is produced inside the conductor in a direction normal to both the current and
+        the magnetic field. This phenomenon is known as Hall Effect and the generated voltage is known as Hall voltage.
+    </li>
+    <li><img src="static/hall_effect.png" alt="Hall Effect"></li>
+    <li>If the material is a p type semiconductor, when electric and magnetic field is applied at right angle to each
+        other, holes experience a force and are accumulated on one face of the material. This causes a potential
+        difference and a voltage is developed called Hall voltage.</li>
+    <li>Similar thing happens to n type semiconductor</li>
+    <li>eE<sub>H</sub> = Bev</li>
+    <li>Consider a n type semiconductor in which electrons have a velocity “v” due to current flow. Let “B” be the
+        applied magnetic field. The electrons experience a force of “Bev” due to the magnetic field. </li>
+    <li>A potential difference is established across the two faces of the material causing a field “EH “. This field
+        gives rise to a force “e EH “ on the electrons.</li>
+</ul>
+</body>
+<footer class="credit">
+    <p>
+        Content provided by <img src="https://noobscience.rocks/favicon.ico" style="width: 18px;" alt=""> <a
+            href="https://noobscience.rocks">Ishan Joshi</a> for <a href="https://griet.ac.in">GRIET</a>
+        Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC</a>
+    </p>
+</footer>
+</html>
