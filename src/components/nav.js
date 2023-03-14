@@ -45,10 +45,11 @@ const Nav = () => {
         <div>
             <div className="nav">
                 <ul>
-                    <li id="nav_title"><img src={icon} width="32" style={{ width: "32px", verticalAlign: "middle", borderRadius: "24px" }} alt="NoobScience Icon" /> <span onClick={() => {window.location = "/"}}>NoobScience</span></li>
-                    <li><Link className="hover_animation_underline" to={"/"}>Home</Link></li>
+                    <li id="nav_title"><img src={icon} width="32" height="32" style={{verticalAlign: "middle", borderRadius: "24px" }} alt="NoobScience Icon" /> <span onClick={() => {window.location = "/"}}>NoobScience</span></li>
+                    {/* <li><Link className="hover_animation_underline" to={"/"}>Home</Link></li> */}
                     <li><Link className="hover_animation_underline" to={"/about"}>About</Link></li>
                     <li><Link className="hover_animation_underline" to={"/projects"}>Projects</Link></li>
+                    <li><a className="hover_animation_underline" href={"/blog/index.html"}>Blog</a></li>
                     <li><Link className="hover_animation_underline" to={"/skills"}>Skills</Link></li>
                     <li><Link className="hover_animation_underline" to={"/resume"}>Resume</Link></li>
                     <li><a className="hover_animation_underline" href="https://github.com/newtoallofthis123"><i className="bi bi-github"></i> Github</a></li>
@@ -58,11 +59,12 @@ const Nav = () => {
             </div>
             <div className="m_nav">
                 <ul>
-                    <li id="nav_title"><img src={icon} style={{ width: "32px", verticalAlign: "middle", borderRadius: "24px" }} alt="NoobScience Icon" /> <span onClick={() => {window.location = "/"}}>NoobScience</span> ➡️ <button onClick= {update_toggle} className="animate__animated animate__wobble animate__delay-1s animate__slow" id="op_toggle"><i id="nav_icon" className="bi bi-list"></i></button></li>
+                    <li id="nav_title"><img width="32" height="32" src={icon} style={{verticalAlign: "middle", borderRadius: "24px" }} alt="NoobScience Icon" /> <span onClick={() => {window.location = "/"}}>NoobScience</span> <i className="bi bi-arrow-right"></i> <button onClick= {update_toggle} className="animate__animated animate__wobble animate__delay-1s animate__slow" id="op_toggle"><i id="nav_icon" className="bi bi-list"></i></button></li>
                     <div id="options">
-                        <li><Link to={"/"}>Home</Link></li>
+                        {/* <li><Link to={"/"}>Home</Link></li> */}
                         <li><Link to={"/about"}>About</Link></li>
                         <li><Link to={"/projects"}>Projects</Link></li>
+                        <li><a href={"/blog/index.html"}>Blog</a></li>
                         <li><Link to={"/skills"}>Skills</Link></li>
                         <li><Link to={"/resume"}>Resume</Link></li>
                         <li><a href="https://github.com/newtoallofthis123">Github</a></li>

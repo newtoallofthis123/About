@@ -83,7 +83,7 @@ const Projects = () => {
                     <button style={{ backgroundColor: '#44fffd', }} className="download"><a href="https://newtoallofthis123.github.io/ReactSite">More About</a></button>
                 </div>
             </div>
-            <p style={{ textAlign: 'center', }}>Impressed with my projects? Check out my <Link to="/ReactSite/skills" className="link hover_animation_underline">skills</Link> and resume. Thank You.</p>
+            <p className="text" style={{ textAlign: 'center', }}>Impressed with my projects? Check out my <Link to="/ReactSite/skills" className="text link hover_animation_underline">skills</Link> and resume. Thank You.</p>
         </div>
     )
 }

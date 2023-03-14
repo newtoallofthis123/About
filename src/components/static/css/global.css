@@ -6,19 +6,39 @@ html {
     scroll-behavior: smooth;
 }
 
+.light-pfp {
+    display: inline;
+}
+
+.dark-pfp {
+    display: none;
+}
+
 :root {
     --selection_color: rgb(0, 0, 0);
-    --selection_background: rgb(255, 242, 0);
-    --color: #000;
-    --bg: #fff;
+    --selection_background: rgb(252, 245, 118);
+    --blue: #75f0f3;
+    --green: #83f583;
+    --yellow: #f6ff00;
+    --pink: #f888d6;
+    --red: #ff9c9c;
+    --violet: #dd5eff;
+    --color: #1c1a1a;
+    --bg: #faf6f6;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --selection_color: rgb(0, 0, 0);
-    --selection_background: rgb(212, 247, 249);
-    --color: #ebe7e7;
-    --bg: #121111;
+    --selection_color: rgb(27, 26, 26);
+    --selection_background: rgb(255, 255, 255);
+    --color: #e7dede;
+    --bg: #1a1e27;
+  }
+  .dark-pfp{
+    display: inline;
+  }
+  .light-pfp{
+    display: none;
   }
 }
 
@@ -202,8 +222,7 @@ p {
 .main_title {
     font-size: 7rem;
     padding: 1.2rem;
-    margin: 0 3.2rem 3.2rem;
-    margin-bottom: 1rem;
+    margin: 1rem 3.2rem;
     color: var(--color);
 }
 
@@ -244,37 +263,26 @@ a {
     font-size: 1.2rem;
     padding: 3px;
     text-decoration: none;
-    color: #000;
+    color: #1c1a1a;
 }
 
 a:hover {
-    color: #000;
+    color: #1c1a1a;
 }
 
 .link {
-    position: relative;
-    display: inline-block;
-    line-height: 1.2;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 80%;
-    background: #000;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    color: #1c1a1a;
+    text-decoration: underline;
+    text-decoration-color: #1c1a1a;
+    text-decoration-thickness: 2px;
+    transition-duration: 0.1s;
+    transition-delay: 0.05s;
 }
 
-.link:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    left: 0;
-    height: 2px;
-    border-radius: 2px;
-    background: var(--color);
+.link:hover{
+    text-decoration: none;
+    background-color: #1c1a1a;
+    color: #faf6f6;
 }
 
 #stack ul {
@@ -304,9 +312,9 @@ code {
     font-size: 1.8rem;
     background-color: var(--bg);
     color: var(--color);
-    position: fixed;
+    /* position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     width: 100%;
 }
 
@@ -344,44 +352,77 @@ code {
 .new {
     font-size: 1.2rem;
     font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #000;
+    color: var(--color);
     text-align: center;
-    background-color: #faf348;
+    background-color: var(--bg);
+    color: var(--color);
+}
+
+.new a{
+    color: var(--color);
+    text-decoration: underline;
 }
 
 .cli_div{
-    margin: 3.2rem 3.2rem 1.2rem;
-    padding: 12px;
-    background-color: #282828;
+    margin: 0.5rem 1.2rem;
+    /* padding: 12px; */
+    background-color: #2d2c2c;
     border-radius: 12px;
 }
 
 .cli_div button{
     border: 0;
-    background-color: #282828;
+    background-color: #2d2c2c;
     font-size: 1rem;
     color: white;
 }
 
 .cli{
     border: 0;
-    background-color: #282828;
+    background-color: #2d2c2c;
     width: 90%;
     font-family: "Fira Code", "Courier New", Courier, monospace;
-    font-size: 1rem;
-    color: #0ef60e;
+    font-size: 1.2rem;
+    color: #e5e7e5;
 }
 
 .cli:focus{
     outline: none;
 }
 
-.cli_output p {
+.cli_output{
     font-family: "Fira Code", "Courier New", Courier, monospace;
-    font-size: 1rem;
-    color: white;
+    font-size: 1.2rem;
+    color: #fff;
     width: 90%;
     margin-left: 4.0rem;
+}
+
+.cli_output {
+    font-family: "Fira Code", "Courier New", Courier, monospace;
+    font-size: 1.2rem;
+    color: #fff;
+    width: 90%;
+    margin-left: 4.0rem;
+}
+
+.cli_output p{
+    font-family: "Fira Code", "Courier New", Courier, monospace;
+}
+
+.cli_output a{
+    color: #fff;
+    text-decoration: underline;
+}
+
+.cli_output code{
+    font-family: "Fira Code", "Courier New", Courier, monospace;
+    font-size: 1rem;
+    color: var(--bg);
+    background-color: var(--color);
+    padding: 0.2rem;
+    border-radius: 5px;
+    width: 90%;
 }
 
 .send_btn{
@@ -390,6 +431,98 @@ code {
 
 .m_footer{
     display: none;
+}
+
+.full-div{
+    margin: 3vw 0;
+}
+
+.scroll_btn{
+    margin: 2rem 5rem;
+    border: 0;
+    background-color: inherit;
+    color: var(--color);
+    font-size: 4.2rem;
+    padding: 0rem 1rem;
+    border-radius: 12px;
+}
+
+.info_div{
+    margin: 2.5% 5%;
+    padding: 12px;
+    background-color: inherit;
+    color: #1c1a1a;
+    border-radius: 12px;
+    border: 2px solid var(--color);
+}
+
+.info_div button{
+    margin: 0.5rem 1rem;
+}
+
+.center{
+    text-align: center;
+}
+
+.random-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 5vw;
+    padding: 2rem;
+}
+
+.text{
+    color: var(--color);
+}
+
+.converted_md{
+    font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #1c1a1a;
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 2px;
+    width: 90%;
+    margin: 1rem 3rem;
+    border: 2px solid #1c1a1a;
+    min-height: 30vh;
+}
+
+.converted_md h1,h2,h3,p{
+    padding: 5px 0;
+    text-align: left;
+    margin: 0;
+}
+
+.converted_md img{
+    width: 20%;
+    height: auto;
+    margin: 0.5rem 2vw;
+}
+
+.converted_md a{
+    font-size: inherit;
+    color: #1c1a1a;
+    text-decoration: underline;
+}
+
+
+#md {
+    resize: vertical;
+    margin: 1rem 3rem;
+    width: 90%;
+    font-family: "Fira Code", 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    border: 2px solid #000;
+    padding: 12px;
+    height: 30vh;
+    border: 2px solid #1c1a1a;
+}
+
+#md::selection{
+    outline: none;
+    background-color: #69ff19;
+    color: #000000;
 }
 
 @media screen and (max-width: 1020px) {
@@ -421,9 +554,22 @@ code {
         width: 80vw;
         height: 18rem;
     }
+
+    .random-div {
+        display: block;
+    }
+    .random-div img {
+        width: 80%;
+    }
+    .markdown{
+        display: block;
+    }
 }
 
-@media screen and (max-width: 608px) {
+@media screen and (max-width: 727px) {
+    p{
+        font-size: 1rem;
+    }
     #profile {
         width: 50vw;
     }
