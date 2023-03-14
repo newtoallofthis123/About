@@ -30,7 +30,7 @@ html {
 @media (prefers-color-scheme: dark) {
   :root {
     --selection_color: rgb(27, 26, 26);
-    --selection_background: rgb(255, 255, 255);
+    --selection_background: rgb(255, 246, 79);
     --color: #e7dede;
     --bg: #1a1e27;
   }
@@ -476,6 +476,25 @@ code {
     color: var(--color);
 }
 
+.result-card{
+    display: flex;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    margin: 2vw 15vw;
+    padding: 20px;
+}
+
+.text-link{
+    color: var(--color);
+    text-decoration: underline;
+}
+
+.text-link:hover{
+    color: var(--bg);
+    background-color: var(--color);
+    text-decoration: none;
+}
+
 .converted_md{
     font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #1c1a1a;
@@ -490,7 +509,7 @@ code {
 
 .converted_md h1,h2,h3,p{
     padding: 5px 0;
-    text-align: left;
+    /* text-align: left; */
     margin: 0;
 }
 
@@ -506,6 +525,11 @@ code {
     text-decoration: underline;
 }
 
+.converted_md::selection{
+    outline: none;
+    background-color: #f6fd27;
+    color: #000000;
+}
 
 #md {
     resize: vertical;
@@ -521,8 +545,77 @@ code {
 
 #md::selection{
     outline: none;
-    background-color: #69ff19;
+    background-color: #f6fd27;
     color: #000000;
+}
+
+.qr{
+    padding: 12px;
+    margin: 1vw 10vw;
+}
+
+.qr input{
+    width: 50vw;
+    margin: 0 1rem;
+    border: 2px solid var(--color);
+    border-radius: 12px;
+    padding: 0.5rem;
+}
+
+#qrcode{
+    font-family: "Fira Code", 'Courier New', Courier, monospace;
+}
+
+#qrcode::selection{
+    outline: none;
+    background-color: #f6fd27;
+    color: #000000;
+}
+
+#editor{
+    resize: vertical;
+    width: 50vw;
+    margin: 1vw 5vw;
+    border: 2px solid #000;
+    padding: 12px;
+    height: 40vh;
+    border: 2px solid #1c1a1a;
+}
+
+.files{
+    text-align: center;
+}
+
+.files button{
+    margin: 0.5rem 1rem;
+    background-color: inherit;
+    border: 0;
+    color: var(--color);
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.files button:hover{
+    color: #f6fd27;
+    background-color: var(--bg);
+}
+
+.files button p{
+    font-size: 1.4rem;
+}
+
+.editor{
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.git{
+    margin: 2vw 5vw;
+    padding: 2vw;
+    background-color: inherit;
 }
 
 @media screen and (max-width: 1020px) {
@@ -563,6 +656,16 @@ code {
     }
     .markdown{
         display: block;
+    }
+    .editor{
+        display: block;
+    }
+    #editor{
+        width: 80vw;
+    }
+    .result-card{
+        display: block;
+        margin: 2vw 5vw;
     }
 }
 

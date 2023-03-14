@@ -50,6 +50,7 @@ const Nav = () => {
                     <li><Link className="hover_animation_underline" to={"/about"}>About</Link></li>
                     <li><Link className="hover_animation_underline" to={"/projects"}>Projects</Link></li>
                     <li><a className="hover_animation_underline" href={"/blog/index.html"}>Blog</a></li>
+                    <li><Link className="hover_animation_underline" to={"/tools"}>Tools</Link></li>
                     <li><Link className="hover_animation_underline" to={"/skills"}>Skills</Link></li>
                     <li><Link className="hover_animation_underline" to={"/resume"}>Resume</Link></li>
                     <li><a className="hover_animation_underline" href="https://github.com/newtoallofthis123"><i className="bi bi-github"></i> Github</a></li>
@@ -66,6 +67,7 @@ const Nav = () => {
                         <li><Link to={"/projects"}>Projects</Link></li>
                         <li><a href={"/blog/index.html"}>Blog</a></li>
                         <li><Link to={"/skills"}>Skills</Link></li>
+                        <li><Link to={"/tools"}>Tools</Link></li>
                         <li><Link to={"/resume"}>Resume</Link></li>
                         <li><a href="https://github.com/newtoallofthis123">Github</a></li>
                         <li><a href="https://links.noobscience.rocks">Social</a></li>

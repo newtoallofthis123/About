@@ -11,7 +11,12 @@ import React from 'react';
 import Home from './components/home'
 import About from './components/about'
 import Skills from './components/skills'
-import Md from './components/md';
+import Md from './components/tools/md';
+import Qr from './components/tools/qr';
+import Editor from './components/tools/editor';
+import Git from './components/tools/git';
+import RanGen from './components/tools/rangen';
+import Tools from './components/tools';
 import Projects from './components/projects'
 import Navbar from './components/nav';
 import resume from './components/static/pdf/resume.pdf'
@@ -100,6 +105,11 @@ function App({location}) {
           <Route exact path="/notes" element={<Notes />} />
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/blog/latest" element={<BlogLatest />} />
+          <Route exact path="/tools" element={<Tools />} />
+          <Route exact path="/tools/qr" element={<Qr />} />
+          <Route exact path="/tools/editor" element={<Editor />} />
+          <Route exact path="/tools/git" element={<Git />} />
+          <Route exact path="/tools/random" element={<RanGen />} />
 
           <Route exact path="/hi" element={<Navigate to="/about" replace />} />
           <Route exact path="/me" element={<Navigate to="/about" replace />} />
