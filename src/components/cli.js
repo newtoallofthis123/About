@@ -6,6 +6,8 @@ export default function Cli() {
     const commands = ["help", "about", "git", "talk", "projects", "skills", "resume", "clear", "exit", "ls", "man", "blog"]
     const targets = {
         "help": "Available Commands: help, about, git, talk, projects, skills, resume, clear, exit",
+        "ls": "Try the help command. Like linux? Me too :)",
+        'dir': "Try the help command. Use windows? I do too!",
         'about': () => {
             return (
                 <div>

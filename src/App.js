@@ -61,7 +61,7 @@ const Blog = () => {
 }
 
 const BlogLatest = () => {
-  window.location = "https://noobscience.rocks/blog/articles/pirates.html"
+  window.location = "https://noobscience.rocks/blog/articles/social-media-1.html"
   return (
     <div>
       <h1 className='text'>Redirecting...</h1>
